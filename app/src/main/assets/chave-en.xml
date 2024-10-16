@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<key>
+    <nodes>
+        <node id="Q1">
+            <question>Compare your insect with the images below to make your choice (if needed, you can enlarge the images)</question>
+            <options>
+                <option goto="Q2">
+                    <text>Delicate and membranous forewings with clearly visible veins</text>
+                    <description>Delicate and membranous forewings with clearly visible veins </description>
+                    <imageLocation>hintImages/1/asas membranosas/asas_membranosas.jpg</imageLocation>
+                </option>
+                <option goto="Q14">
+                    <text>Strong and hard forewings with no visible veins. If the wing veins are visible, the insect has one pair of legs different from the others. Wingless.</text>
+                    <description>Strong and hard forewings with no visible veins. If the wing veins are visible, the insect has one pair of legs different from the others. Wingless.</description>
+                    <imageLocation>hintImages/1/asas duras/asas_duras.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q2">
+            <question>Observe the wings of your insect</question>
+            <options>
+                <option goto="Q3">
+                    <text>One pair of wings (forewings)</text>
+                    <description>One pair of wings (forewings)</description>
+                    <imageLocation>hintImages/2/duas asas.jpg</imageLocation>
+                </option>
+                <option goto="Q4">
+                    <text>Two pairs of wings (forewings and hindwings) </text>
+                    <description>Two pairs of wings (forewings and hindwings)</description>
+                    <imageLocation>hintImages/2/quatro asas.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q3">
+            <question>Observe the antennae of your insect</question>
+            <options>
+                <option goto="R1">
+                    <text>Antennae formed by three segments or less</text>
+                    <description>Antennae formed by three segments or less</description>
+                    <imageLocation>hintImages/3/cabeca mosca.jpg</imageLocation>
+                </option>
+                <option goto="R2">
+                    <text>Antennae formed by more than three segments </text>
+                    <description>Antennae formed by more than three segments </description>
+                    <imageLocation>hintImages/3/cabeca mosquito.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q4">
+            <question>Observe the antennae of your insect</question>
+            <options>
+                <option goto="Q5">
+                    <text>Short antennae (shorter than or the same size as the head)</text>
+                    <description>Short antennae (shorter than or the same size as the head)</description>
+                    <imageLocation>hintImages/4/cabeca cigarra.jpg</imageLocation>
+                </option>
+                <option goto="Q8">
+                    <text>Long antennae (longer than the head)</text>
+                    <description>Long antennae (longer than the head)</description>
+                    <imageLocation>hintImages/4/cabeca formiga-leao.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q5">
+            <question>Observe the forewings (closer to the head)</question>
+            <options>
+                <option goto="Q6">
+                    <text>Forewings with oval shape </text>
+                    <description>Forewings with oval shape </description>
+                    <imageLocation>hintImages/5/odonata oval.jpg</imageLocation>
+                </option>
+                <option goto="R3">
+                    <text>Forewings with triangular shape </text>
+                    <description>Forewings with triangular shape</description>
+                    <imageLocation>hintImages/5/ephemeroptera triangular.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q6">
+            <question>Observe the mouth of your insect</question>
+            <options>
+                <option goto="Q7">
+                    <text>Mouth with large mandibles</text>
+                    <description>Mouth with large mandibles</description>
+                    <imageLocation>hintImages/6/boca libelula.jpg</imageLocation>
+                </option>
+                <option goto="R4">
+                    <text>Beak-like mouth</text>
+                    <description>Beak-like mouth</description>
+                    <imageLocation>hintImages/6/boca cigarra.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q7">
+            <question>Observe the wings of your insect</question>
+            <options>
+                <option goto="R5">
+                    <text>Forewings smaller than hindwings</text>
+                    <description>Forewings smaller than hindwings</description>
+                    <imageLocation>hintImages/7/libelulas_diferentes.jpg</imageLocation>
+                </option>
+                <option goto="R6">
+                    <text>Forewings and hindwings with similar size</text>
+                    <description>Forewings and hindwings with similar size</description>
+                    <imageLocation>hintImages/7/libelinha iguais.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q8">
+            <question>Observe the wings of your insect</question>
+            <options>
+                <option goto="Q9">
+                    <text>Translucent wings (permit the passage of light)</text>
+                    <description>Translucent wings (permit the passage of light)</description>
+                    <imageLocation>hintImages/8/asas translucidas.jpg</imageLocation>
+                </option>
+                <option goto="Q12">
+                    <text>Opaque wings (more difficult the passage of light)</text>
+                    <description>Opaque wings (more difficult the passage of light)</description>
+                    <imageLocation>hintImages/8/asas opacas.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q9">
+            <question>Observe the wings of your insect</question>
+            <options>
+                <option goto="Q10">
+                    <text>Wings with few veins, almost without transversal veins</text>
+                    <description>Wings with few veins, almost without transversal veins</description>
+                    <imageLocation>hintImages/9/poucas nervuras.jpg</imageLocation>
+                </option>
+                <option goto="Q11">
+                    <text>Wings with net-like aspect, with transversal and longitudinal veins</text>
+                    <description>Wings with net-like aspect, with transversal and longitudinal veins</description>
+                    <imageLocation>hintImages/9/muitas nervuras.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q10">
+            <question>Observe the region between the thorax and the abdomen</question>
+            <options>
+                <option goto="R8">
+                    <text>With a constriction between the thorax and the abdomen (with waist)</text>
+                    <description>With a constriction between the thorax and the abdomen (with waist)</description>
+                    <imageLocation>hintImages/10/hymenoptera com cintura.jpg</imageLocation>
+                </option>
+                <option goto="R7">
+                    <text>Without a constriction between the thorax and the abdomen (without waist)</text>
+                    <description>Without a constriction between the thorax and the abdomen (without waist)</description>
+                    <imageLocation>hintImages/10/hymenoptera sem cintura.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q11">
+            <question>Observe the head of your insect</question>
+            <options>
+                <option goto="R9">
+                    <text>Head without extension</text>
+                    <description>Head without extension</description>
+                    <imageLocation>hintImages/11/sem prolongamento.jpg</imageLocation>
+                </option>
+                <option goto="R10">
+                    <text>Head extended like a beak</text>
+                    <description>Head extended like a beak</description>
+                    <imageLocation>hintImages/11/focinho.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q12">
+            <question>Observe the wings of your insect</question>
+            <options>
+                <option goto="Q13">
+                    <text>Wings covered by scales</text>
+                    <description>Wings covered by scales</description>
+                    <imageLocation>hintImages/12/escamas.jpg</imageLocation>
+                </option>
+                <option goto="R11">
+                    <text>Wings covered by fur (without scales)</text>
+                    <description>Wings covered by fur (without scales)</description>
+                    <imageLocation>hintImages/12/pelos.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q13">
+            <question>Observe the antennae of your insect</question>
+            <options>
+                <option goto="R12">
+                    <text>Antennae ending in a club, ball-like shape</text>
+                    <description>Antennae ending in a club, ball-like shape</description>
+                    <imageLocation>hintImages/13/antenas maca.jpg</imageLocation>
+                </option>
+                <option goto="R13">
+                    <text>Antennae with different shapes, but never ending in a club </text>
+                    <description>Antennae with different shapes, but never ending in a club </description>
+                    <imageLocation>hintImages/13/antenas diversas.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q14">
+            <question>Observe the legs of your insect</question>
+            <options>
+                <option goto="Q16">
+                    <text>Third pair of legs with shape and size similar to the others</text>
+                    <description>Third pair of legs with shape and size similar to the others</description>
+                    <imageLocation>hintImages/14/patas semelhantes.jpg</imageLocation>
+                </option>
+                <option goto="Q15">
+                    <text>Third pair of legs much longer than the others and adapted for jumping</text>
+                    <description>Third pair of legs much longer than the others and adapted for jumping</description>
+                    <imageLocation>hintImages/14/patas salto.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q15">
+            <question>Observe the antennae of your insect</question>
+            <options>
+                <option goto="R15">
+                    <text>Long antennae, larger than the body length</text>
+                    <description>Long antennae, larger than the body length</description>
+                    <imageLocation>hintImages/15/antenas compridas.jpg</imageLocation>
+                </option>
+                <option goto="R14">
+                    <text>Antennae clearly shorter than the body length</text>
+                    <description>Antennae clearly shorter than the body length </description>
+                    <imageLocation>hintImages/15/antenas curtas.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q16">
+            <question>Observe the wings of your insect</question>
+            <options>
+                <option goto="Q18">
+                    <text>Insects with wings</text>
+                    <description>Insects with wings</description>
+                    <imageLocation>hintImages/16/com asas.jpg</imageLocation>
+                </option>
+                <option goto="Q17">
+                    <text>Wingless insects</text>
+                    <description>Wingless insects</description>
+                    <imageLocation>hintImages/16/sem asas.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q17">
+            <question>Observe the body of your insect</question>
+            <options>
+                <option goto="R16">
+                    <text>Stick-like body</text>
+                    <description>Stick-like body</description>
+                    <imageLocation>hintImages/17/phasmida.jpg</imageLocation>
+                </option>
+                <option goto="R22">
+                    <text>Shape of the body does not look like a stick </text>
+                    <description>Shape of the body does not look like a stick </description>
+                    <imageLocation>hintImages/17/formiga.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q18">
+            <question>Observe the abdomen of your insect</question>
+            <options>
+                <option goto="Q19">
+                    <text>Abdomen without appendixes, or, if there are appendixes, these are not shaped like pincers</text>
+                    <description>Abdomen without appendixes, or, if there are appendixes, these are not shaped like pincers</description>
+                    <imageLocation>hintImages/18/apendices sem forma de pinca.jpg</imageLocation>
+                </option>
+                <option goto="R17">
+                    <text>Abdomen ending in pincers</text>
+                    <description>Abdomen ending in pincers</description>
+                    <imageLocation>hintImages/18/pincas.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q19">
+            <question>Observe the end of the abdomen</question>
+            <options>
+                <option goto="Q20">
+                    <text>End of the abdomen with appendixes (cerci)</text>
+                    <description>End of the abdomen with appendixes (cerci)</description>
+                    <imageLocation>hintImages/19/apendices .jpg</imageLocation>
+                </option>
+                <option goto="Q21">
+                    <text>End of the abdomen without appendixes (cerci)</text>
+                    <description>End of the abdomen without appendixes (cerci)</description>
+                    <imageLocation>hintImages/19/sem apendices.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q20">
+            <question>Observe the legs of your insect</question>
+            <options>
+                <option goto="R18">
+                    <text>Three pairs of legs with similar look</text>
+                    <description>Three pairs of legs with similar look</description>
+                    <imageLocation>hintImages/20/patas semelhantes metade.jpg</imageLocation>
+                </option>
+                <option goto="R19">
+                    <text>First pair of legs resembling claws, wider and thornier than the others</text>
+                    <description>First pair of legs resembling claws, wider and thornier than the others</description>
+                    <imageLocation>hintImages/20/patas anteriores garras.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q21">
+            <question>Observe the mouth of your insect</question>
+            <options>
+                <option goto="Q22">
+                    <text>Mouth with a beak-like shape</text>
+                    <description>Mouth with a beak-like shape</description>
+                    <imageLocation>hintImages/21/boca percevejo.jpg</imageLocation>
+                </option>
+                <option goto="R20">
+                    <text>Mouth with visible mandibles</text>
+                    <description>Mouth with visible mandibles</description>
+                    <imageLocation>hintImages/21/boca coleoptera.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+        <node id="Q22">
+            <question>Observe the wings of your insect</question>
+            <options>
+                <option goto="R21">
+                    <text>Forewings divided in two areas: closer to the head, the wing looks robust and strong; at the edges, the wing is more delicate and translucent with visible veins</text>
+                    <description>Forewings divided in two areas: closer to the head, the wing looks robust and strong; at the edges, the wing is more delicate and translucent with visible veins</description>
+                    <imageLocation>hintImages/22/asa anterior percevejo.jpg</imageLocation>
+                </option>
+                <option goto="R23">
+                    <text>Forewings with the same aspect throughout their extension</text>
+                    <description>Forewings with the same aspect throughout their extension</description>
+                    <imageLocation>hintImages/22/asa anterior cigarrinha.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+    </nodes>
+    <results>
+        <result id="R1">
+            <ordem>FLIES: Order Diptera - Suborder Brachycera</ordem>
+            <description>
+                Order Diptera: it means that it has two (di) wings (ptera).
+
+                Flies, horse flies, and hoverflies belong to the order Diptera, like mosquitoes. They only have two membranous wings -, the hindwings are transformed into balancers, a distinctive feature of this order. Their mouthparts are adapted for sucking liquids. The adults of some species feed on blood while others do not feed at all during this stage. Larvae can be aquatic or feed on fungi and decaying organic matter.
+
+                Suborder Brachycera
+				This suborder (together with the subclass Cyclorrapha) is characterized by antennae with no more than three segments.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Diptera/moscas/Lucilia sp.jpg</imageLocation>
+        </result>
+        <result id="R2">
+            <ordem>MOSQUITOES AND CRANE FLIES: Order Diptera - Suborder Nematocera</ordem>
+            <description>
+				Order Diptera: it means that it has two (di) wings (ptera).
+
+                Flies, horse flies, and hoverflies belong to the order Diptera, like mosquitoes. They only have two membranous wings -, the hindwings are transformed into balancers, a distinctive feature of this order. Their mouthparts are adapted for sucking liquids. The adults of some species feed on blood while others do not feed at all during this stage. Larvae can be aquatic or feed on fungi and decaying organic matter.
+
+                Suborder Nematocera
+				The insects of this suborder are the oldest of the Diptera Order. They are recognized by their antennae formed by more than three segments and by the slender body. Mosquitoes and melgae, due to their dependence on water and moisture for the development of the larvae, are usually associated with damp and dank habitats near watercourses.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Diptera/mosquitos/Tipula sp asas castanhas.jpg</imageLocation>
+        </result>
+        <result id="R3">
+            <ordem>MAYFLIES: Order Ephemeroptera</ordem>
+            <description>
+				Order Ephemeroptera: it means that it lives only for a day (ephemera)
+
+                The distinctive features of mayflies include short antennae, three long tail filaments at the end of the abdomen, and one or two pairs of extremely delicate wings. When they have forewings (those nearer the head), they are always much larger than the hind wings. In Europe there are around 200 different species. However, it is in the tropics that we can find the greatest number of species. The European species are smaller and live near fresh water.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Ephemeroptera/Ephemera glaucops carta.jpg</imageLocation>
+        </result>
+        <result id="R4">
+            <ordem>CICADAS AND HOPPERS: Order Homoptera</ordem>
+            <description>
+				Order Homoptera: it means that it has equal (homo) wings (ptera).
+
+                Cicadas and hoppers are a very heterogeneous group with a great variety of shapes and habitats, but they all share a very important characteristic: their mouth is modified into a long beak to suck liquids. In many cases, this beak arises from the rear part of the head, very close to the front legs. All homopterans feed on plants, and many species are crop pests. These insects weaken the plants by sucking out large amounts of sap. Many species also inject toxins that damage the plant.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Hemiptera/Homoptera/Cicada orni.jpg</imageLocation>
+        </result>
+        <result id="R5">
+            <ordem>DRAGONFLIES: Order Odonata - Suborder Anisoptera</ordem>
+            <description>
+				Order Odonata: it means that it has teeth (odonto).
+
+                The Odonata order is divided in two groups: dragonflies (suborder Anisoptera) and damselflies (suborder Zygoptera). Dragonflies and damselflies have excellent vision due to their two large compound eyes, and their powerful toothed mandibles allow them to eat hard-skinned animals, like beetles. Contrary to popular belief, dragonflies do not have a sting (and therefore do not sting). Despite being strange looking insects, they are very useful to humans as they feed on considerable amounts of flies and insects. Dragonflies and damselflies are quite distinctive insects: they are distinguished by their long and slender bodies displaying two pairs of wings, with complex venation. The antennae are very short. There are around 5,700 Odonata species in the world. In Europe there are 120 species of this order, of which 65 can be found in Portugal (42 dragonflies and 23 damselflies).
+
+                Suborder Anisoptera: it means that it has different (aniso) wings (ptera).
+				When at rest, dragonflies keep their wings open in an horizontal position. Their strong muscles allow them to have a fast flight and to be effective hunters. Being essentially aquatic animals they need water to complete their life cycle. However, due to their powerful flight ability, adults are often seen far away from the rivers and streams where they were born. Dragonflies are frequently found in forest clearings hunting insects, in places warmed by the sun.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Odonata/Anisoptera/Libellula depressa.jpg</imageLocation>
+        </result>
+        <result id="R6">
+            <ordem>DAMSELFLIES: Order Odonata - Suborder Zygoptera</ordem>
+            <description>
+				Order Odonata: it means that it has teeth (odonto)
+
+                The Odonata order is divided in two groups: dragonflies (suborder Anisoptera) and damselflies (suborder Zygoptera). Dragonflies and damselflies have excellent vision due to their two large compound eyes, and their powerful toothed mandibles allow them to eat hard-skinned animals, like beetles. Contrary to popular belief, dragonflies do not have a sting (and therefore do not sting). Despite being strange looking insects, they are very useful to humans as they feed on considerable amounts of flies and insects. Dragonflies and damselflies are quite distinctive insects: they are distinguished by their long and slender bodies displaying two pairs of wings, with complex venation. The antennae are very short. There are around 5,700 Odonata species in the world. In Europe there are 120 species of this order, of which 65 can be found in Portugal (42 dragonflies and 23 damselflies).
+
+                Suborder Zygoptera: it means that it has equal (zygo) wings (ptera)
+                The Zygoptera, or damselflies, have two identical pairs of wings.  When at rest, they keep their wings closed or slightly open in a vertical position. Their compound eyes, set at opposite positions, form a structure that resembles a small hammer. Damsels are delicate insects with a graceful and slow flight. Since damsels are not very fast, they catch their prey while at rest, usually on vegetation.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Odonata/Zygoptera/Lestes viridis.jpg</imageLocation>
+        </result>
+        <result id="R7">
+            <ordem>SAWFLY: Order Hymenoptera - Suborder Symphyta
+            </ordem>
+            <description>
+				Order Hymenoptera: it means that it has membranous (hymen) wings (ptera)
+
+                The hymenopterans are insects characterized by two pairs of membranous wings with few veins, being the forewings larger than the hindwings. Some hymenoptera, such as ants, are wingless. The order Hymenoptera is the second largest order based on the number of known species – nearly 200,000. In Portugal there are just over 1,000 known species, probably an underestimation of the actual number of species. The hymenopterans perform a number of important roles in our ecosystems, such as pollinators and agents for biological control of other insect populations.
+
+                Suborder Symphyta
+				Sawflies are insects with the four membranous wings typical of hymenopterans. However, they are distinguished from the others due to the absence of  the narrow “waist” between the thorax and the abdomen (the “wasp waist”). Their common name, sawfly, comes from their saw-like ovipositor, used to cut the tissue of the plants where eggs are laid. The adults feed from polen.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+			</description>
+            <imageLocation>resultImages/Hymenoptera/Symphyta/Macrophya montana.jpg</imageLocation>
+        </result>
+        <result id="R8">
+            <ordem>BEES, WASPS, AND ANTS - Order Hymenoptera - Suborder Apocrita</ordem>
+            <description>
+				Order Hymenoptera: it means that it has membranous (hymen) wings (ptera)
+
+                The hymenopterans are insects characterized by two pairs of membranous wings with few veins, being the forewings larger than the hindwings. Some hymenoptera, such as ants, are wingless. The order Hymenoptera is the second largest order based on the number of known species – nearly 200,000. In Portugal there are just over 1,000 known species, probably an underestimation of the actual number of species. The hymenopterans perform a number of important roles in our ecosystems, such as pollinators and agents for biological control of other insect populations.
+
+                The suborder Apocrita represents the majority of Hymenopterans. This group is characterized by the narrow “waist” between the thorax and the abdomen – “the wasp waist”. The Larvae are always surrounded by food, and as such trarely need to move - that is why larvae have small heads and do not have legs.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Hymenoptera/Apocrita/Megascolia maculata.jpg</imageLocation>
+        </result>
+        <result id="R9">
+            <ordem>LACEWINGS, OWLFLIES, AND ANT-LIONS - Order Neuroptera</ordem>
+            <description>
+                Order Neuroptera: it means that it has nerves (neuro) in the wings (ptera).
+
+                Neuropterans have membranous wings with a fine network of veins extending both lengthwise and crosswise. The antennae are long and the mouth has strong biting mandibles. Most species are predators during all stages of their life cycle. There are more than 4,500 species worldwide.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Neuroptera/Nemoptera bipennis.jpg</imageLocation>
+        </result>
+        <result id="R10">
+            <ordem>SCORPION FLIES - Order Mecoptera</ordem>
+            <description>
+				Order Mecoptera: it means that it has long wings (meco).
+
+                The shape of the head of these insects, with the front extending downwards into a beak with mandibles at the end, makes them quite unmistakable. Most species have two pairs of long, membranous wings with dark spots and the legs are very slender. The antennae are long, with many segments, and the compound eyes are well developed. There are about 500 described species, of which only 30 live in Europe. The Portuguese fauna is represented by two families with only one known species in each family:scorpion fly (Panorpa sp, Family Panorpidae) and hanging fly (Bittacus italicus, família Bittacidae).
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Mecoptera/mosca-escorpiao Panorpa meridionalis.jpg</imageLocation>
+        </result>
+        <result id="R11">
+            <ordem>CADDISFLIES - Order Tricoptera</ordem>
+            <description>
+				Order Trichoptera: it means that it has hairs (trichos) in the wings (ptera).
+
+                The wings of caddisflies have few cross-veins and are covered in hairs. When the insect is at rest, the wings are held over the body like a roof. The antennae are slender and sometimes very long. Caddisflies might resemble some butterflies: to distinguish them, look for the presence of hairs on the wings and mandibles on the mouth. The adults are not well known: they have very conspicuous colours and patterns, and usually fly at dusk. There are about 13,000 worldwide, but the fauna of many regions remains largely unknown. Tricopterans live in freshwater habitats, and their larvae are aquatic. Unlike most insects, the larval phase of the Trichoptera is the most popular and best known.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Trichoptera/Mosca-de-Agua.jpg</imageLocation>
+        </result>
+        <result id="R12">
+            <ordem>BUTTERFLIES - Order Lepidoptera - Rhopalocera group</ordem>
+            <description>
+                Order Lepidoptera: it means that it has scales (lepido) in the wings (ptera).
+
+                Butterflies and Moths are distinctive insects, usually with two pairs of membranous wings which, like the body, are covered in tiny scales. The mouth-parts form a straw-like proboscis – a long tube used by insects to suck liquids (water and nectar). When the animal is not feeding, the proboscis is coiled under the head. Currently, there are 160,000 to 175,000 known species, but it has been estimated that the total number of lepidopteran species could reach half a million.
+                Group Rhopalocera: means that it has the antennae (wax) in the form of a club (rhopalo)
+				These species are diurnal and have slender antennae that are club-shaped at the ends. Most species do not protect their pupae or chrysalis inside a cocoon. Another feature that distinguishes this group is the absence of any type of connection between the forewings and the hindwings.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Lepidoptera/Rhopalocera/Vanessa atalanta.jpg</imageLocation>
+        </result>
+        <result id="R13">
+            <ordem>MOTHS - Order Lepidoptera - Heterocera group</ordem>
+            <description>
+				Order Lepidoptera: it means that it has scales (lepido) in the wings (ptera).
+
+                Butterflies and Moths are distinctive insects, usually with two pairs of membranous wings which, like the body, are covered in tiny scales. The mouth-parts form a straw-like proboscis – a long tube used by insects to suck liquids (water and nectar). When the animal is not feeding, the proboscis is coiled under the head. Currently, there are 160,000 to 175,000 known species, but it has been estimated that the total number of lepidopteran species could reach half a million.
+				Group Heterocera: means that it has the antennae (wax) with different forms (hetero).
+				Approximately 90% of the lepidopteran are moths. Although this group includes many dark-coloured species which are associated with nocturnal activity (such as the moths that are attracted to light bulbs), it also includes other species that fly during the day, and therefore have brightly coloured wings. The Heterocera group is primarily distinguished by the shape of their antennae, which can be quite diverse (comb, rope or string-like shaped)but are never like the clubbed-shaped antennae of diurnal butterflies.
+				In Portugal, about 2600 species have been inventoried and new species are discovered every year, as a result of the work of national and foreign researchers. For more information about our fauna you can explore www.lusoborboletas.org.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Lepidoptera/Heterocera/Catocala elocata.jpg</imageLocation>
+        </result>
+        <result id="R14">
+            <ordem>GRASSHOPPERS - Order Orthoptera - Suborder Caelifera</ordem>
+            <description>
+				Order Orthoptera: it means that it has straight (ortho) wings (ptera).
+
+                These insects have a large head and a conspicuous first thoracic segment (pronoto) that resembles a horse saddle. The hind legs, which are larger than the other legs, are modified for jumping. There are typically two pairs of wings, being the forewings (the pair nearer the head) thicker. There are more than 15,000 known species worldwide, although mostly found in tropical regions. In Europe, the Mediterranean region is home to the greatest number of species. Another characteristic of the Orthoptera order is their ability to produce sounds.
+
+                Suborder Caelifera:
+				Most short-horned grasshoppers live in grasslands and open fields in areas with warm and dry climate. Grasshoppers should not be identified based on their colours and patterns, as these characteristics can vary significantly. Grasshoppers belonging to the same species but living in different places can look very different. Grasshoppers can mimic the colours present in their habitat in order to avoid detection by predators.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Orthoptera/curtas/Calliptamus barbarus.jpg</imageLocation>
+        </result>
+        <result id="R15">
+            <ordem>CRICKETS AND BUSH-CRICKETS - Order Orthoptera - Suborder Ensifera</ordem>
+            <description>
+                Order Orthoptera: it means that it has straight (ortho) wings (ptera).
+
+                These insects have a large head and a conspicuous first thoracic segment (pronoto) that resembles a horse saddle. The hind legs, which are larger than the other legs, are modified for jumping. There are typically two pairs of wings, being the forewings (the pair nearer the head) thicker. There are more than 15,000 known species worldwide, although mostly found in tropical regions. In Europe, the Mediterranean region is home to the greatest number of species. Another characteristic of the Orthoptera order is their ability to produce sounds.
+				Most species from this group live in areas of dense vegetation such as woods and forests. Females belonging to the Ensifera suborder have a long ovipositor at the end of the abdomen used to pierce the substratum, allowing them to lay their eggs in a protected place.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Orthoptera/compridas/Tettigonia viridissima.jpg</imageLocation>
+        </result>
+        <result id="R16">
+            <ordem>STICK INSECTS - Order Phasmida</ordem>
+            <description>
+				Order Phasmida: it means "spirit" or "apparition" (phasma).
+
+                Stick insects are unmistakable. They have a long slender body with long legs, strong mandibles and a pair of long antennae. The European species are wingless. Their legs are all identical and have five segments. Stick insects are herbivorous – they use their powerful mandibles to chew plants.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Phasmidae/bicho-pau Leptynia attenuata carta.jpg</imageLocation>
+        </result>
+        <result id="R17">
+            <ordem>EARWIGS - Order Dermaptera</ordem>
+            <description>
+                Order Dermaptera: it means that it has wings (ptera) similar to skin (derma).
+
+                Earwigs are elongated insects with long slender antennae. They have two pairs of wings: the forewings are small and hard pair and called tegmina; the hindwings are extremely thin and membranous.  When at rest, the wings remain elaborately folded under the tegmina. The abdomen has high mobility, with a pair of terminal segments modified as forceps.  In adult males the forceps are strongly curved. These forceps have different functions: they may be used to open the wings, to capture prey, and also as a defence weapon against predators. The Dermaptera represents a relatively small insect order, with around 1,800 species worldwide.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Dermaptera/Forficula auriculata.jpg</imageLocation>
+        </result>
+        <result id="R18">
+            <ordem>COCKROACHES - Order Blattodea</ordem>
+            <description>
+				Order Blattodea: it means that it flees from the light (blatta).
+
+                Cockroaches have a flattened egg-shaped dark-coloured body. They are characterized by a shield-like pronoto (the first thoracic segment) covering a large part of the head. Many species of cockroaches have two pair of wings: the forewing pair (located nearer the head) is hard and the hindwing pair is membranous. They have chewing mouthparts and most species have long and thin antennae.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Blatodea/Periplaneta americana.jpg</imageLocation>
+        </result>
+        <result id="R19">
+            <ordem>PRAYING MANTIS - Order Mantodea</ordem>
+            <description>
+				Order Mantodea: it means that it has the form of a "prophet".
+
+                The praying mantis is readily distinguished by its well-developed spined front legs (located nearer the head), which are modified for hunting.  Their first thoracic segment (pronotum) is also very long and narrow. Some species have two pairs of fully functional wings, while in other species only the male can fly and there are even species without wings. There are about 2 3000 species of mantids, although they mainly occur in tropical regions. There are twelve known species of praying mantis in Europe, but in Portugal reports indicate the presence of only nine species.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Mantodea/louva-a-deus Iris oratoria carta.jpg</imageLocation>
+        </result>
+        <result id="R20">
+            <ordem>BEETLES - Order Coleoptera</ordem>
+            <description>
+				Order Coleoptera: it means that they have protective wings (coleo).
+
+                These insects normally have two pairs of wings. The pair of forewings is hardened, and is not used for flight, but instead to protect the abdomen. When at rest, the pair of hindwings and the abdomen are both hidden, beneath the hardened wings.
+                Beetles are an extremely abundant group both in terms of number of individuals as well as in the number of species. There are more than 350,000 known species worldwide, of which around 8,500 can be found in Portugal. Their diversity is reflected in the variety of habits they can colonize and their ability to explore different types of food resources.
+                All stages of beetle development, from larvae to adults, have a mouth adapted for chewing, with well developed jaws. The first pair of wings is called elytra. The presence of the elytra was decisive for the success of this order, giving it a great resistance and ability to colonize several environments.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Coleoptera/Copris de asa aberta.jpg</imageLocation>
+        </result>
+        <result id="R21">
+            <ordem>BUGS - Order Heteroptera</ordem>
+            <description>
+				Order Heteroptera: it means that it has different (hetero) wings (ptera).
+
+                The name of this order comes from the features of the forewings of these insects, which are hardened on the upper half of the wing, and membranous on the lower half. Generally, bugs have a flattened body, with their wings folded over the body when they are at rest. Like cicadas and hoppers, all heteroptera species have a beak-shaped mouth. Many families have glands near the hind legs which secrete substances with an unpleasant smell.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Hemiptera/Heteroptera/Rhinocoris iracundus.jpg</imageLocation>
+        </result>
+        <result id="R22">
+            <ordem>ANTS - Order Hymenoptera - Suborder Apocrita</ordem>
+            <description>
+                Order Hymenoptera: it means that it has membranous (hymen) wings (ptera) .
+
+                The hymenopterans are insects characterized by two pairs of membranous wings with few veins, being the forewings larger than the hindwings. Some hymenoptera, such as ants, are wingless. The order Hymenoptera is the second largest order based on the number of known species – nearly 200,000. In Portugal there are just over 1,000 known species, probably an underestimation of the actual number of species. The hymenopterans perform a number of important roles in our ecosystems, such as pollinators and agents for biological control of other insect populations.
+
+                Suborder Apocrita
+				This suborder represents the majority of Hymenopterans. This group is characterized by the narrow “waist” between the thorax and the abdomen – “the wasp waist”. The larvae are always surrounded by food, and as such rarely need to move - that is why larvae have small heads and do not have legs.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Hymenoptera/Apocrita/Cataglyphis sp.jpg</imageLocation>
+        </result>
+        <result id="R23">
+            <ordem>CICADAS AND HOPPERS - Order Homoptera</ordem>
+            <description>
+                Order Homoptera: it means that it has equal (homo) wings (ptera).
+
+                Cicadas and hoppers are a very heterogeneous group with a great variety of shapes and habitats, but they all share a very important characteristic: their mouth is modified into a long beak to suck liquids. In many cases, this beak arises from the rear part of the head, very close to the front legs. All homopterans feed on plants, and many species are crop pests. These insects weaken the plants by sucking out large amounts of sap. Many species also inject toxins that damage the plant.
+
+                More information in the Catalog of the Exhibition "Insects in Order".
+            </description>
+            <imageLocation>resultImages/Hemiptera/Homoptera/Cicadella viridis.jpg</imageLocation>
+        </result>
+    </results>
+</key>
