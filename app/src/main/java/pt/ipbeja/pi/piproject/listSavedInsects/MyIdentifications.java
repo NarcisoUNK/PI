@@ -2,9 +2,12 @@ package pt.ipbeja.pi.piproject.listSavedInsects;
 
 import androidx.appcompat.widget.PopupMenu;
 import androidx.room.Room;
+
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.text.LineBreaker;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -144,12 +147,14 @@ public class MyIdentifications extends AppCompatActivity {
                             }
                         });
                         popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                            @RequiresApi(api = Build.VERSION_CODES.O)
+                            @SuppressLint("NonConstantResourceId")
                             @Override
                             public boolean onMenuItemClick(MenuItem item) {
                                 switch (item.getItemId()) {
                                     case R.id.idmoreinfo:
-                                        showMoreInformation(identification);
+                                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                                            showMoreInformation(identification);
+                                        }
                                         return true;
                                     case R.id.idorder:
                                         changeOrder();
@@ -167,7 +172,7 @@ public class MyIdentifications extends AppCompatActivity {
                                 }
                             }
 
-                            @RequiresApi(api = Build.VERSION_CODES.O)
+                            @RequiresApi(api = Build.VERSION_CODES.Q)
                             private void showMoreInformation(Identification identification) {
                                 final AlertDialog.Builder builder = new AlertDialog.Builder(MyIdentifications.this);
 
@@ -195,7 +200,7 @@ public class MyIdentifications extends AppCompatActivity {
                                     alert.show();
                                     TextView messageText = (TextView) alert.findViewById(android.R.id.message);
                                     assert messageText != null;
-                                    messageText.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
+                                    messageText.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
                                 } catch (IOException e) {
                                     e.printStackTrace();
                                 }
@@ -208,6 +213,7 @@ public class MyIdentifications extends AppCompatActivity {
                                 m.show();
                             }
 
+                            @SuppressLint("UnsafeIntentLaunch")
                             private void deleteItem(final MenuItem item, final Identification identification) {
                                 new Thread() {
                                     @Override
@@ -293,7 +299,7 @@ public class MyIdentifications extends AppCompatActivity {
 
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(item.getTimestamp());
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String timeAndDate = df.format(calendar.getTime());
 
 

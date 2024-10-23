@@ -1,11 +1,12 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
-    compileSdk 33
+    compileSdk 34
     defaultConfig {
         applicationId "pt.ipbeja.pi.piproject"
         minSdkVersion 27
-        targetSdkVersion 28
+        targetSdkVersion 33
         versionCode 1
         versionName "Beta"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -17,29 +18,37 @@ android {
         }
     }
     namespace 'pt.ipbeja.pi.piproject'
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
 
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     //noinspection GradleCompatible
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation "androidx.appcompat:appcompat:1.7.0"
+    implementation "com.google.android.material:material:1.12.0"
+    implementation "androidx.core:core-ktx:1.13.1"
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
     implementation 'com.jsibbold:zoomage:1.3.1'
-    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    //noinspection OutdatedLibrary
+    implementation 'com.google.android.gms:play-services-maps:19.0.0'
+    implementation 'androidx.core:core-ktx:1.13.1'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    implementation 'android.arch.persistence.room:runtime:1.0.0'
-    annotationProcessor "android.arch.persistence.room:compiler:1.0.0"
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'android.arch.persistence.room:runtime:1.1.1'
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
     implementation 'com.github.chrisbanes:PhotoView:2.1.3'
 //https://medium.com/mindorks/implementation-vs-api-in-gradle-3-0-494c817a6fa
-    implementation "com.android.support:exifinterface:26.1.0"
-    implementation 'com.android.support:design:26.1.0'
+    implementation "com.android.support:exifinterface:28.0.0"
+    implementation 'com.android.support:design:28.0.0'
     implementation 'de.hdodenhof:circleimageview:3.0.2'
     implementation 'com.makeramen:roundedimageview:2.2.1'
-    implementation 'com.android.support:support-v13:26.0.2'
+    implementation 'com.android.support:support-v13:28.0.0'
 
 
 }
