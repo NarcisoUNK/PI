@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Final.iml" filepath="$PROJECT_DIR$/Final.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Final.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Final.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Final.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Final.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Final.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Final.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Final.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Final.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PI.iml" filepath="$PROJECT_DIR$/.idea/modules/PI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PI.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PI.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PI.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PI.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PI.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PI.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PI.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PI.app.unitTest.iml" />
     </modules>
   </component>
 </project>
