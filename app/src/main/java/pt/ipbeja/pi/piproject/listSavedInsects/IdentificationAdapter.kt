@@ -1,5 +1,6 @@
 package pt.ipbeja.pi.piproject.listSavedInsects
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.BitmapFactory
 import android.net.Uri
@@ -14,11 +15,10 @@ import pt.ipbeja.pi.piproject.persistence.Identification
 import java.io.FileNotFoundException
 import java.text.SimpleDateFormat
 
-/**
- * Created by vxf on 2/2/18.
- */
 class IdentificationAdapter(private val ctx: Context, objects: List<Identification?>) :
     ArrayAdapter<Identification?>(ctx, 0, objects) {
+
+    @SuppressLint("SimpleDateFormat")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var convertView = convertView
         val ident = getItem(position)
@@ -27,23 +27,28 @@ class IdentificationAdapter(private val ctx: Context, objects: List<Identificati
             convertView = LayoutInflater.from(context).inflate(R.layout.item_listing, parent, false)
         }
 
-        val orderTxt = convertView!!.findViewById<View>(R.id.orderTxt) as TextView
-        val coordsTxt = convertView.findViewById<View>(R.id.coordsTxt) as TextView
-        val dateTxt = convertView.findViewById<View>(R.id.dateTxt) as TextView
-        val imageView = convertView.findViewById<View>(R.id.coverView) as ImageView
+        val orderTxt = convertView!!.findViewById<TextView>(R.id.orderTxt)
+        val coordsTxt = convertView.findViewById<TextView>(R.id.coordsTxt)
+        val dateTxt = convertView.findViewById<TextView>(R.id.dateTxt)
+        val imageView = convertView.findViewById<ImageView>(R.id.coverView)
 
-        orderTxt.text = ident!!.order
-        coordsTxt.text = ident.dMSCoord
-        dateTxt.text = (SimpleDateFormat()).format(ident.timestamp)
+        orderTxt.text = ident?.order
+        coordsTxt.text = ident?.dMSCoord
+        dateTxt.text = SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(ident?.timestamp)
 
-
+        // Tenta carregar a imagem do URI fornecido, caso a permissão esteja ativa
         try {
-            val photoUri = Uri.parse(ident.photoURI)
-            val `is` = ctx.contentResolver.openInputStream(photoUri)
-            val image = BitmapFactory.decodeStream(`is`)
+            val photoUri = Uri.parse(ident?.photoURI)
+            val inputStream = ctx.contentResolver.openInputStream(photoUri)
+            val image = BitmapFactory.decodeStream(inputStream)
             imageView.setImageBitmap(image)
+        } catch (e: SecurityException) {
+            e.printStackTrace()
+            // Exibe uma imagem de substituição caso o acesso ao URI falhe
+            imageView.setImageResource(R.drawable.placeholder_image)
         } catch (e: FileNotFoundException) {
             e.printStackTrace()
+            imageView.setImageResource(R.drawable.placeholder_image)
         }
 
         return convertView
