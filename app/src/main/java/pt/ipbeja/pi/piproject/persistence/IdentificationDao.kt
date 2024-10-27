@@ -17,21 +17,16 @@ interface IdentificationDao {
      * @param identification the identification to insert
      */
     @Insert
-    fun insertIdentification(identification: Identification?)
+    fun insertIdentification(identification: Identification) // Non-nullable parameter
 
-    /**
-     * Removes an identification from the the database
-     *
-     * @param identification the identification to remove
-     */
     @Delete
-    fun deleteIdentification(identification: Identification?)
+    fun deleteIdentification(identification: Identification) // Non-nullable parameter
 
     @Update
-    fun updateOrderInIdentification(identification: Identification?)
+    fun updateOrderInIdentification(identification: Identification) // Non-nullable parameter
 
     @get:Query("SELECT * FROM identification")
-    val allIdentifications: Array<Identification?>?
+    val allIdentifications: Array<Identification?>
 
     @get:Query("SELECT COUNT(*) FROM identification")
     val identificationCount: Int

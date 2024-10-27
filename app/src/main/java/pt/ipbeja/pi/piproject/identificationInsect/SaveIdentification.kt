@@ -122,6 +122,7 @@ class SaveIdentification : AppCompatActivity() {
         requestCode: Int, permissions: Array<String>,
         grantResults: IntArray
     ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         when (requestCode) {
             PERMISSIONS_REQUEST_READ_LOCATION -> {
                 // If request is cancelled, the result arrays are empty.
@@ -180,7 +181,9 @@ class SaveIdentification : AppCompatActivity() {
                     }
                 }
 
-                db.identificationDao()?.insertIdentification(ident)
+                if (ident != null) {
+                    db.identificationDao()?.insertIdentification(ident)
+                }
             }
         }.start()
 

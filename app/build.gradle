@@ -1,5 +1,8 @@
-apply plugin: 'com.android.application'
-apply plugin: 'org.jetbrains.kotlin.android'
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.devtools.ksp'
+}
 
 android {
     compileSdk 34
@@ -12,6 +15,9 @@ android {
         versionName "Beta"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+
+
     buildTypes {
         release {
             minifyEnabled false
@@ -20,23 +26,24 @@ android {
     }
     namespace 'pt.ipbeja.pi.piproject'
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
 }
 
 dependencies {
 
+
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    //noinspection GradleCompatible
+
     implementation 'com.android.support:appcompat-v7:28.0.0'
-    //noinspection GradleDependency
-    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
     implementation 'com.jsibbold:zoomage:1.3.1'
     //noinspection OutdatedLibrary
-    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.android.gms:play-services-maps:19.0.0'
     implementation 'androidx.core:core-ktx:1.13.1'
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'android.arch.persistence.room:runtime:1.1.1'
@@ -45,9 +52,15 @@ dependencies {
 //https://medium.com/mindorks/implementation-vs-api-in-gradle-3-0-494c817a6fa
     implementation "com.android.support:exifinterface:28.0.0"
     implementation 'com.android.support:design:28.0.0'
-    implementation 'de.hdodenhof:circleimageview:3.0.2'
-    implementation 'com.makeramen:roundedimageview:2.2.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
     implementation 'com.android.support:support-v13:28.0.0'
+    ksp("androidx.room:room-compiler:2.6.1")
 
+}
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }

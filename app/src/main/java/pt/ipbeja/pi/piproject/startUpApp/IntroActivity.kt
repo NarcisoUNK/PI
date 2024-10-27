@@ -113,7 +113,7 @@ class IntroActivity : AppCompatActivity() {
 
         // next button click Listener
         btnNext.setOnClickListener(View.OnClickListener {
-            position = screenPager.getCurrentItem()
+            position = screenPager.currentItem
             if (position < mList.size) {
                 position++
                 screenPager.setCurrentItem(position)
@@ -187,18 +187,18 @@ class IntroActivity : AppCompatActivity() {
         val pref = applicationContext.getSharedPreferences("myPrefs", MODE_PRIVATE)
         val editor = pref.edit()
         editor.putBoolean("isIntroOpened", false)
-        editor.commit()
+        editor.apply()
     }
 
     // show the GETSTARTED Button and hide the indicator and the next button
     private fun loaddLastScreen() {
-        btnNext!!.visibility = View.INVISIBLE
-        btnGetStarted!!.visibility = View.VISIBLE
-        tvSkip!!.visibility = View.INVISIBLE
-        tabIndicator!!.visibility = View.VISIBLE
+        btnNext.visibility = View.INVISIBLE
+        btnGetStarted.visibility = View.VISIBLE
+        tvSkip.visibility = View.INVISIBLE
+        tabIndicator.visibility = View.VISIBLE
 
 
         // setup animation
-        btnGetStarted!!.animation = btnAnim
+        btnGetStarted.animation = btnAnim
     }
 }

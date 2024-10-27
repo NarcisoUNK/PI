@@ -189,7 +189,9 @@ class MyIdentifications : AppCompatActivity() {
                             fun deleteItem(item: MenuItem?, identification: Identification?) {
                                 object : Thread() {
                                     override fun run() {
-                                        db.identificationDao()?.deleteIdentification(identification)
+                                        if (identification != null) {
+                                            db.identificationDao()?.deleteIdentification(identification)
+                                        }
                                         //arrayOfListings.remove(item);
                                         adapter.notifyDataSetChanged()
                                         insectsListView.invalidate()

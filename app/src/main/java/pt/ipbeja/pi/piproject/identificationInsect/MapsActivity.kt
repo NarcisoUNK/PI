@@ -45,7 +45,7 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback {
         } else {
             val dialog =
                 GooglePlayServicesUtil.getErrorDialog(status, applicationContext as Activity, 10)
-            dialog.show()
+            dialog?.show()
         }
 
         save = findViewById<View>(R.id.savebtn) as Button
