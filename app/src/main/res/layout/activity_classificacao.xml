@@ -12,8 +12,8 @@
 
     <TextView
         android:id="@+id/txt"
-        android:layout_width="299dp"
-        android:layout_height="65dp"
+        android:layout_width="284dp"
+        android:layout_height="51dp"
         android:autoSizeTextType="uniform"
         android:text="TextView"
         android:textAlignment="center"
@@ -24,7 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintVertical_bias="0.009" />
 
     <Button
         android:id="@+id/optionA"
@@ -41,11 +41,11 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.553" />
+        app:layout_constraintVertical_bias="0.533" />
 
     <Button
         android:id="@+id/optionB"
@@ -65,12 +65,12 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageOptionB"
-        app:layout_constraintVertical_bias="0.237" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/imageOptionB"
-        android:layout_width="160dp"
-        android:layout_height="111dp"
+        android:layout_width="374dp"
+        android:layout_height="299dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
@@ -79,17 +79,16 @@
         android:onClick="onImageBClick"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.423"
+        app:layout_constraintVertical_bias="0.373"
         app:riv_corner_radius="30dip"
         app:srcCompat="@mipmap/pending_photo" />
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/imageOptionA"
-        android:layout_width="160dp"
-        android:layout_height="110dp"
+        android:layout_width="385dp"
+        android:layout_height="281dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -97,27 +96,24 @@
         android:onClick="onImageAClick"
         app:layout_constraintBottom_toTopOf="@+id/optionA"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt"
-        app:layout_constraintVertical_bias="0.482"
-        app:srcCompat="@mipmap/pending_photo"
-        app:riv_corner_radius="30dip" />
+        app:layout_constraintVertical_bias="0.687"
+        app:riv_corner_radius="30dip"
+        app:srcCompat="@mipmap/pending_photo" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="55dp"
         android:layout_height="52dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/ic_keyboard_return_black_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
@@ -126,9 +122,8 @@
         android:id="@+id/button3"
         android:layout_width="55dp"
         android:layout_height="52dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/ic_home_black_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
