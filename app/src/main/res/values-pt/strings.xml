@@ -235,4 +235,7 @@
     <string name="contents">Conteúdos</string>
     <string name="contents_name">Eva Monteiro\nPatrícia Garcia Pereira</string>
     <string name="version">Versão Beta - Julho 2018</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="TitleInsects">MyInsects</string>
+    <string name="TitleGeo">MyGeo</string>
 </resources>

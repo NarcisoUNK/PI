@@ -7,12 +7,12 @@
                 <option goto="Q2">
                     <text>Delicate and membranous forewings with clearly visible veins</text>
                     <description>Delicate and membranous forewings with clearly visible veins </description>
-                    <imageLocation>hintImages/1/asas membranosas/asas_membranosas.jpg</imageLocation>
+                    <imageLocation>hintImages/1/pedra redonda/hematite.jpg</imageLocation>
                 </option>
                 <option goto="Q14">
                     <text>Strong and hard forewings with no visible veins. If the wing veins are visible, the insect has one pair of legs different from the others. Wingless.</text>
                     <description>Strong and hard forewings with no visible veins. If the wing veins are visible, the insect has one pair of legs different from the others. Wingless.</description>
-                    <imageLocation>hintImages/1/asas duras/asas_duras.jpg</imageLocation>
+                    <imageLocation>hintImages/1/pedra redonda/hematite.jpg</imageLocation>
                 </option>
             </options>
         </node>
