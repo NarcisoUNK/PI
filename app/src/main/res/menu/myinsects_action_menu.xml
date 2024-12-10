@@ -23,9 +23,4 @@
         android:enabled="true"
         android:title="@string/delete_insect"
         android:visible="true" />
-    <item
-        android:id="@+id/idcancel"
-        android:enabled="true"
-        android:title="@string/cancel"
-        android:visible="true" />
 </menu>

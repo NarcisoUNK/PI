@@ -117,9 +117,4 @@
         android:enabled="true"
         android:title=""
         android:visible="true" />
-    <item
-        android:id="@+id/idcancel"
-        android:enabled="true"
-        android:title="@string/cancel"
-        android:visible="true" />
 </menu>

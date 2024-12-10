@@ -186,7 +186,7 @@ class IntroActivity : AppCompatActivity() {
     private fun savePrefsData() {
         val pref = applicationContext.getSharedPreferences("myPrefs", MODE_PRIVATE)
         val editor = pref.edit()
-        editor.putBoolean("isIntroOpened", false)
+        editor.putBoolean("isIntroOpened", true)
         editor.apply()
     }
 

@@ -111,7 +111,7 @@ class MyIdentifications : AppCompatActivity() {
                         val popup = PopupMenu(this@MyIdentifications, view)
 
                         popup.menuInflater.inflate(R.menu.myinsects_action_menu, popup.menu)
-                        popup.setOnDismissListener { view.setBackgroundColor(Color.RED) }
+
                         popup.setOnMenuItemClickListener(object :
                             PopupMenu.OnMenuItemClickListener {
                             override fun onMenuItemClick(item: MenuItem): Boolean {
@@ -135,8 +135,6 @@ class MyIdentifications : AppCompatActivity() {
                                         deleteItem(item, identification)
                                         return true
                                     }
-
-                                    R.id.idcancel -> return true
                                     else -> return false
                                 }
                             }
