@@ -184,20 +184,28 @@ class MyIdentifications : AppCompatActivity() {
                                 m.show()
                             }
 
+                            /**
+                             * Remover item da lista e da base de dados
+                             *
+                             * Atualizado através de uma thread
+                             * Atualiza UI através de uma UI thread
+                             */
                             fun deleteItem(item: MenuItem?, identification: Identification?) {
-                                object : Thread() {
-                                    override fun run() {
-                                        if (identification != null) {
-                                            db.identificationDao()?.deleteIdentification(identification)
-                                        }
-                                        //arrayOfListings.remove(item);
+                                Thread {
+                                    if (identification != null) {
+                                        db.identificationDao()?.deleteIdentification(identification)
+
+                                        // Remover o item da lista principal
+                                        arrayOfListings.remove(identification)
+                                    }
+
+                                    // Atualizar a UI na thread principal
+                                    runOnUiThread {
                                         adapter.notifyDataSetChanged()
-                                        insectsListView.invalidate()
                                     }
                                 }.start()
-                                finish()
-                                startActivity(intent)
                             }
+
                         })
                         popup.show()
                     } //                    private void showDialogDeleteSend(final ListView identsLst, final Identification item) {
