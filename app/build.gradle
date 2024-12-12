@@ -16,13 +16,26 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
-
+    flavorDimensions += "theme"
+    productFlavors {
+        create("insects") {
+            dimension="theme"
+            applicationIdSuffix ".insects"
+            versionNameSuffix "-insects"
+        }
+        create("rocks") {
+            dimension="theme"
+            applicationIdSuffix ".rocks"
+            versionNameSuffix "-rocks"
+        }
+    }
 
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
     }
     namespace 'pt.ipbeja.pi.piproject'
     kotlinOptions {

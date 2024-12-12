@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<key>
+    <nodes>
+        <!-- First Question -->
+        <node id="Q1">
+            <question>Does your sample have visible minerals or fragments?</question>
+            <options>
+                <option goto="Q2">
+                    <text>Yes, it has visible minerals or fragments</text>
+                    <description>With visible minerals or fragments</description>
+                    <imageLocation>images/visible_fragments.jpg</imageLocation>
+                </option>
+                <option goto="Q3">
+                    <text>No, it does not have visible minerals or fragments</text>
+                    <description>Without visible minerals or fragments</description>
+                    <imageLocation>images/no_visible_fragments.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+
+        <!-- Questions for "Without visible minerals or fragments" -->
+        <node id="Q3">
+            <question>Is the sample fully or partially vitreous?</question>
+            <options>
+                <option goto="R1">
+                    <text>Yes, vitreous</text>
+                    <description>Fully or partially vitreous</description>
+                    <imageLocation>images/vitreous.jpg</imageLocation>
+                </option>
+                <option goto="Q4">
+                    <text>No, not vitreous</text>
+                    <description>Not vitreous; dull; homogeneous with grains too fine to distinguish</description>
+                    <imageLocation>images/non_vitreous.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+
+        <node id="Q4">
+            <question>Does the sample smell like clay when breathed upon?</question>
+            <options>
+                <option goto="R2">
+                    <text>Yes, smells like clay</text>
+                    <description>Smells like clay; various colors; soft and friable when rubbed</description>
+                    <imageLocation>images/clay.jpg</imageLocation>
+                </option>
+                <option goto="R3">
+                    <text>No, but it reacts with HCl</text>
+                    <description>Compact; scratched with a knife; strong effervescence with HCl; light or dark color</description>
+                    <imageLocation>images/limestone.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+
+        <!-- Questions for "With visible minerals or fragments" -->
+        <node id="Q2">
+            <question>Can the grains of the sample be distinguished with the naked eye?</question>
+            <options>
+                <option goto="Q5">
+                    <text>Yes, grains are distinguishable</text>
+                    <description>Grains distinguishable with the naked eye</description>
+                    <imageLocation>images/distinguishable_grains.jpg</imageLocation>
+                </option>
+                <option goto="Q6">
+                    <text>No, it has a fragmentary composition</text>
+                    <description>Fragmentary composition</description>
+                    <imageLocation>images/fragmentary_composition.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+
+        <node id="Q5">
+            <question>Does the sample have foliation?</question>
+            <options>
+                <option goto="R4">
+                    <text>No, without foliation</text>
+                    <description>Without foliation</description>
+                    <imageLocation>images/no_foliation.jpg</imageLocation>
+                </option>
+                <option goto="R5">
+                    <text>Yes, with foliation</text>
+                    <description>Distinctly foliated</description>
+                    <imageLocation>images/with_foliation.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+
+        <node id="Q6">
+            <question>Are the fragments bound together by cement?</question>
+            <options>
+                <option goto="R6">
+                    <text>No, loose texture</text>
+                    <description>Loose texture, mobile, fragments not bound by cement</description>
+                    <imageLocation>images/sand.jpg</imageLocation>
+                </option>
+                <option goto="R7">
+                    <text>Yes, compact texture</text>
+                    <description>Compact texture, fragments bound by cement</description>
+                    <imageLocation>images/conglomerate.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+    </nodes>
+
+    <results>
+        <result id="R1">
+            <ordem>Obsidian</ordem>
+            <description>Usually dark in color, solid, with a brilliant vitreous shine.</description>
+            <imageLocation>resultImages/obsidian.jpg</imageLocation>
+        </result>
+        <result id="R2">
+            <ordem>Clay</ordem>
+            <description>Smells like clay; soft to the touch; friable when rubbed.</description>
+            <imageLocation>resultImages/clay.jpg</imageLocation>
+        </result>
+        <result id="R3">
+            <ordem>Limestone</ordem>
+            <description>Compact; reacts strongly with HCl; light or dark in color.</description>
+            <imageLocation>resultImages/limestone.jpg</imageLocation>
+        </result>
+        <result id="R4">
+            <ordem>Granite</ordem>
+            <description>Massive, composed of quartz and feldspar; grains of similar size.</description>
+            <imageLocation>resultImages/granite.jpg</imageLocation>
+        </result>
+        <result id="R5">
+            <ordem>Gneiss</ordem>
+            <description>Granular texture with mineral grains oriented in layers.</description>
+            <imageLocation>resultImages/gneiss.jpg</imageLocation>
+        </result>
+        <result id="R6">
+            <ordem>Sand</ordem>
+            <description>Loose texture, mobile, fragments smaller than 2 mm.</description>
+            <imageLocation>resultImages/sand.jpg</imageLocation>
+        </result>
+        <result id="R7">
+            <ordem>Conglomerate</ordem>
+            <description>Compact texture, fragments larger than 2 mm, bound by cement.</description>
+            <imageLocation>resultImages/conglomerate.jpg</imageLocation>
+        </result>
+    </results>
+</key>
