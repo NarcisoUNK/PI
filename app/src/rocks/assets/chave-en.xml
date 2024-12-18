@@ -8,12 +8,12 @@
                 <option goto="Q2">
                     <text>Yes, it has visible minerals or fragments</text>
                     <description>With visible minerals or fragments</description>
-                    <imageLocation>images/visible_fragments.jpg</imageLocation>
+                    <imageLocation>images/a2.JPG</imageLocation>
                 </option>
                 <option goto="Q3">
                     <text>No, it does not have visible minerals or fragments</text>
                     <description>Without visible minerals or fragments</description>
-                    <imageLocation>images/no_visible_fragments.jpg</imageLocation>
+                    <imageLocation>images/a1.jpg</imageLocation>
                 </option>
             </options>
         </node>

@@ -8,12 +8,12 @@
                 <option goto="Q2">
                     <text>Sim, possui minerais ou fragmentos visíveis</text>
                     <description>Com minerais ou fragmentos visíveis a olho nu</description>
-                    <imageLocation>images/fragmentos_visiveis.jpg</imageLocation>
+                    <imageLocation>images/B1.jpg</imageLocation>
                 </option>
                 <option goto="Q3">
                     <text>Não, não possui minerais ou fragmentos visíveis</text>
                     <description>Sem minerais ou fragmentos visíveis a olho nu</description>
-                    <imageLocation>images/sem_fragmentos_visiveis.jpg</imageLocation>
+                    <imageLocation>images/A1.jpg</imageLocation>
                 </option>
             </options>
         </node>
