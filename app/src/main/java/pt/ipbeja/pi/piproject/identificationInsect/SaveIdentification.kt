@@ -170,10 +170,10 @@ class SaveIdentification : AppCompatActivity() {
             try {
                 photoFile = createTmpImageFile()
 
-                if (photoFile != null) {
+                if (true) {
                     val photoURI = FileProvider.getUriForFile(
                         this,
-                        "pt.ipbeja.pi.piproject.fileprovider",
+                        "${applicationContext.packageName}.fileprovider",
                         photoFile
                     )
                     this.currentPhotoURI = photoURI

@@ -8,7 +8,7 @@
                 <option goto="Q2">
                     <text>Yes, it has visible minerals or fragments</text>
                     <description>With visible minerals or fragments</description>
-                    <imageLocation>images/a2.JPG</imageLocation>
+                    <imageLocation>images/B1.JPG</imageLocation>
                 </option>
                 <option goto="Q3">
                     <text>No, it does not have visible minerals or fragments</text>
@@ -25,12 +25,12 @@
                 <option goto="R1">
                     <text>Yes, vitreous</text>
                     <description>Fully or partially vitreous</description>
-                    <imageLocation>images/vitreous.jpg</imageLocation>
+                    <imageLocation>images/a2.JPG</imageLocation>
                 </option>
                 <option goto="Q4">
                     <text>No, not vitreous</text>
                     <description>Not vitreous; dull; homogeneous with grains too fine to distinguish</description>
-                    <imageLocation>images/non_vitreous.jpg</imageLocation>
+                    <imageLocation>images/A3.JPG</imageLocation>
                 </option>
             </options>
         </node>
@@ -41,12 +41,12 @@
                 <option goto="R2">
                     <text>Yes, smells like clay</text>
                     <description>Smells like clay; various colors; soft and friable when rubbed</description>
-                    <imageLocation>images/clay.jpg</imageLocation>
+                    <imageLocation>images/argila A31.JPG</imageLocation>
                 </option>
                 <option goto="R3">
                     <text>No, but it reacts with HCl</text>
                     <description>Compact; scratched with a knife; strong effervescence with HCl; light or dark color</description>
-                    <imageLocation>images/limestone.jpg</imageLocation>
+                    <imageLocation>images/Calcário A32.JPG</imageLocation>
                 </option>
             </options>
         </node>
@@ -58,12 +58,12 @@
                 <option goto="Q5">
                     <text>Yes, grains are distinguishable</text>
                     <description>Grains distinguishable with the naked eye</description>
-                    <imageLocation>images/distinguishable_grains.jpg</imageLocation>
+                    <imageLocation>images/B2.JPG</imageLocation>
                 </option>
                 <option goto="Q6">
                     <text>No, it has a fragmentary composition</text>
                     <description>Fragmentary composition</description>
-                    <imageLocation>images/fragmentary_composition.jpg</imageLocation>
+                    <imageLocation>images/B3.JPG</imageLocation>
                 </option>
             </options>
         </node>
@@ -74,12 +74,12 @@
                 <option goto="R4">
                     <text>No, without foliation</text>
                     <description>Without foliation</description>
-                    <imageLocation>images/no_foliation.jpg</imageLocation>
+                    <imageLocation>images/B4.JPG</imageLocation>
                 </option>
                 <option goto="R5">
                     <text>Yes, with foliation</text>
                     <description>Distinctly foliated</description>
-                    <imageLocation>images/with_foliation.jpg</imageLocation>
+                    <imageLocation>images/B5.JPG</imageLocation>
                 </option>
             </options>
         </node>
@@ -90,12 +90,12 @@
                 <option goto="R6">
                     <text>No, loose texture</text>
                     <description>Loose texture, mobile, fragments not bound by cement</description>
-                    <imageLocation>images/sand.jpg</imageLocation>
+                    <imageLocation>images/Areia B31.JPG</imageLocation>
                 </option>
                 <option goto="R7">
                     <text>Yes, compact texture</text>
                     <description>Compact texture, fragments bound by cement</description>
-                    <imageLocation>images/conglomerate.jpg</imageLocation>
+                    <imageLocation>images/Conglomerado B32.JPG</imageLocation>
                 </option>
             </options>
         </node>
@@ -105,37 +105,37 @@
         <result id="R1">
             <ordem>Obsidian</ordem>
             <description>Usually dark in color, solid, with a brilliant vitreous shine.</description>
-            <imageLocation>resultImages/obsidian.jpg</imageLocation>
+            <imageLocation>images/obsidiana.jpg</imageLocation>
         </result>
         <result id="R2">
             <ordem>Clay</ordem>
             <description>Smells like clay; soft to the touch; friable when rubbed.</description>
-            <imageLocation>resultImages/clay.jpg</imageLocation>
+            <imageLocation>images/argila A31.jpg</imageLocation>
         </result>
         <result id="R3">
             <ordem>Limestone</ordem>
             <description>Compact; reacts strongly with HCl; light or dark in color.</description>
-            <imageLocation>resultImages/limestone.jpg</imageLocation>
+            <imageLocation>images/calcario.jpg</imageLocation>
         </result>
         <result id="R4">
             <ordem>Granite</ordem>
             <description>Massive, composed of quartz and feldspar; grains of similar size.</description>
-            <imageLocation>resultImages/granite.jpg</imageLocation>
+            <imageLocation>images/Granito B42.JPG</imageLocation>
         </result>
         <result id="R5">
             <ordem>Gneiss</ordem>
             <description>Granular texture with mineral grains oriented in layers.</description>
-            <imageLocation>resultImages/gneiss.jpg</imageLocation>
+            <imageLocation>images/Gnaisse B52.JPG</imageLocation>
         </result>
         <result id="R6">
             <ordem>Sand</ordem>
             <description>Loose texture, mobile, fragments smaller than 2 mm.</description>
-            <imageLocation>resultImages/sand.jpg</imageLocation>
+            <imageLocation>images/areia B31.jpg</imageLocation>
         </result>
         <result id="R7">
             <ordem>Conglomerate</ordem>
             <description>Compact texture, fragments larger than 2 mm, bound by cement.</description>
-            <imageLocation>resultImages/conglomerate.jpg</imageLocation>
+            <imageLocation>images/Conglomerado B32.jpg</imageLocation>
         </result>
     </results>
 </key>

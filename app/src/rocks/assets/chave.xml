@@ -13,7 +13,7 @@
                 <option goto="Q3">
                     <text>Não, não possui minerais ou fragmentos visíveis</text>
                     <description>Sem minerais ou fragmentos visíveis a olho nu</description>
-                    <imageLocation>images/A1.jpg</imageLocation>
+                    <imageLocation>images/a1.jpg</imageLocation>
                 </option>
             </options>
         </node>
@@ -25,12 +25,12 @@
                 <option goto="R1">
                     <text>Sim, vítreo</text>
                     <description>Total ou parcialmente vítreo</description>
-                    <imageLocation>images/vitreo.jpg</imageLocation>
+                    <imageLocation>images/a2.JPG</imageLocation>
                 </option>
                 <option goto="Q4">
                     <text>Não, não é vítreo</text>
                     <description>Não-vitroso; homogêneo e de grão tão fino que não se distinguem grãos individuais</description>
-                    <imageLocation>images/nao_vitreo.jpg</imageLocation>
+                    <imageLocation>images/A3.JPG</imageLocation>
                 </option>
             </options>
         </node>
@@ -41,12 +41,12 @@
                 <option goto="R2">
                     <text>Sim, cheiro de barro</text>
                     <description>Cheiro de barro, várias cores, textura macia e friável</description>
-                    <imageLocation>images/argila.jpg</imageLocation>
+                    <imageLocation>images/argila A31.JPG</imageLocation>
                 </option>
                 <option goto="R3">
                     <text>Não, mas reage ao HCl</text>
                     <description>Compacto, forte efervescência com HCl, cor clara ou preta</description>
-                    <imageLocation>images/calcario.jpg</imageLocation>
+                    <imageLocation>images/Calcário A32.JPG</imageLocation>
                 </option>
             </options>
         </node>
@@ -58,12 +58,12 @@
                 <option goto="Q5">
                     <text>Sim, os grãos se individualizam</text>
                     <description>Grãos que se individualizam a olho nu</description>
-                    <imageLocation>images/graos_individualizados.jpg</imageLocation>
+                    <imageLocation>images/B2.JPG</imageLocation>
                 </option>
                 <option goto="Q6">
                     <text>Não, possui composição fragmentária</text>
                     <description>Composição fragmentária</description>
-                    <imageLocation>images/composicao_fragmentaria.jpg</imageLocation>
+                    <imageLocation>images/B3.JPG</imageLocation>
                 </option>
             </options>
         </node>
@@ -74,12 +74,12 @@
                 <option goto="R4">
                     <text>Não, sem foliação</text>
                     <description>Sem foliação</description>
-                    <imageLocation>images/sem_foliacao.jpg</imageLocation>
+                    <imageLocation>images/B4.JPG</imageLocation>
                 </option>
                 <option goto="R5">
                     <text>Sim, com foliação</text>
                     <description>Distintamente foliado</description>
-                    <imageLocation>images/com_foliacao.jpg</imageLocation>
+                    <imageLocation>images/B5.JPG</imageLocation>
                 </option>
             </options>
         </node>
@@ -90,12 +90,12 @@
                 <option goto="R6">
                     <text>Não, textura desagregada</text>
                     <description>Textura desagregada, móvel, fragmentos não unidos por cimento</description>
-                    <imageLocation>images/areia.jpg</imageLocation>
+                    <imageLocation>images/Areia B31.JPG</imageLocation>
                 </option>
                 <option goto="R7">
                     <text>Sim, textura compacta</text>
                     <description>Textura compacta, fragmentos unidos por cimento</description>
-                    <imageLocation>images/conglomerado.jpg</imageLocation>
+                    <imageLocation>images/Conglomerado B32.JPG</imageLocation>
                 </option>
             </options>
         </node>
@@ -105,37 +105,37 @@
         <result id="R1">
             <ordem>Obsidiana</ordem>
             <description>Geralmente de cor escura, sólido e de brilho vítreo brilhante.</description>
-            <imageLocation>resultImages/obsidiana.jpg</imageLocation>
+            <imageLocation>images/obsidiana.jpg</imageLocation>
         </result>
         <result id="R2">
             <ordem>Argila</ordem>
             <description>Cheiro de barro; esfregado entre os dedos é macio; friável.</description>
-            <imageLocation>resultImages/argila.jpg</imageLocation>
+            <imageLocation>images/argila A31.jpg</imageLocation>
         </result>
         <result id="R3">
             <ordem>Calcário</ordem>
             <description>Compacto; riscado pelo canivete; forte efervescência com HCl.</description>
-            <imageLocation>resultImages/calcario.jpg</imageLocation>
+            <imageLocation>images/calcario.jpg</imageLocation>
         </result>
         <result id="R4">
             <ordem>Granito</ordem>
             <description>Maciço, composto por quartzo e feldspato; grãos de tamanhos semelhantes.</description>
-            <imageLocation>resultImages/granito.jpg</imageLocation>
+            <imageLocation>images/Granito B42.JPG</imageLocation>
         </result>
         <result id="R5">
             <ordem>Gnaisse</ordem>
             <description>Textura granular, com grãos minerais orientados.</description>
-            <imageLocation>resultImages/gnaisse.jpg</imageLocation>
+            <imageLocation>images/Gnaisse B52.JPG</imageLocation>
         </result>
         <result id="R6">
             <ordem>Areia</ordem>
             <description>Textura desagregada, móvel, fragmentos inferiores a 2 mm.</description>
-            <imageLocation>resultImages/areia.jpg</imageLocation>
+            <imageLocation>images/areia B31.jpg</imageLocation>
         </result>
         <result id="R7">
             <ordem>Conglomerado</ordem>
             <description>Textura compacta, fragmentos maiores de 2 mm, unidos por cimento.</description>
-            <imageLocation>resultImages/conglomerado.jpg</imageLocation>
+            <imageLocation>images/Conglomerado B32.jpg</imageLocation>
         </result>
     </results>
 </key>

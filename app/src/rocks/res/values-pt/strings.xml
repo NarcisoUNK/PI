@@ -1,0 +1,213 @@
+<resources>
+    <string name="app_name">Classes de Rochas</string>
+    <string name="title">Classes de Rochas</string>
+    <string name="titleInfo">Informação sobre aplicação</string>
+    <string name="agree">ACEITO</string>
+    <string name="option_a">opção a</string>
+    <string name="option_b">opção b</string>
+    <string name="identification">Identificar</string>
+    <string name="my_insects">As minhas Rochas</string>
+    <string name="credits">Créditos</string>
+    <string name="Privacy_Policy">POLITICA DE PRIVACIDADE</string>
+    <string name="Privacy_Policy_INFO">
+        <![CDATA[ <div style="text-align: justify;">
+        <h1>POLÍTICA DE PRIVACIDADE</h1>
+
+		<p>O Município de Figueira de Castelo Rodrigo e, em particular, o projeto Plataforma de Ciência Aberta (PCA-MFCR) são responsáveis pelo sitío online <a href="https://www.plataforma.edu.pt/"> plataforma.edu.pt</a> e, deste modo, comprometem-se a garantir a privacidade dos dados pessoais recolhidos e/ou transmitidos online. A segurança e a privacidade dos dados dos visitantes do site plataforma.edu.pt são aspetos que assumem uma importância crucial, reservando-se o direito de alterar a política de privacidade, pelo que se aconselha a leitura regular deste documento. Estes textos reproduzem a política de privacidade seguida por nós.</p>
+
+		<p>De seguida poderá encontrar informações específicas aos seguintes pontos:</p>
+
+		<ol>
+		  <li>Qual a informação que é recolhida?</li>
+            <br></br>
+		  <li>Qual é a entidade responsável pela recolha da informação?</li>
+            <br></br>
+		  <li>Como é utilizada a informação recolhida?</li>
+            <br></br>
+		  <li>Que procedimentos de segurança tem o sítio online plataforma.edu.pt, que garantam ao utilizador a proteção dos seus dados contra o acesso, a alteração ou a destruição não autorizada?</li>
+            <br></br>
+		  <li>De que forma pode o utilizador atualizar ou eliminar as informações que facultou previamente através do sítio online plataforma.edu.pt?</li>
+            <br></br>
+		  <li>Outras questões de que deverá ter conhecimento sobre a política de privacidade.</li>
+		</ol>
+
+
+		<p>Caso surja qualquer dúvida sobre os pontos aqui apresentados, agradecemos que nos contacte através do endereço de correio electrónico <a href="info@plataforma.edu.pt"> info@plataforma.edu.pt</a>.</p>
+
+		    <p>1) Qual a informação que é recolhida?</p>
+
+		<p>Para os mais variados propósitos, existem alguns formulários no sítio online plataforma.edu.pt, que solicitam dados pessoais. A informação recolhida é a necessária para assegurar a identidade do utilizador e o bom funcionamento das atividades e objetivos a que se propõem. A informação que o utilizador tem por objetivo a prestação de um serviço mais adequado às suas características e necessidades e ao envio de informações relacionadas com a utilização dos serviços prestados pela PCA-MFCR. O utilizador poderá atualizar as informações por si fornecidas, sempre que quiser, bastando para isso enviar uma mensagem de correio electrónico para  , tendo como assunto “Atualização de Dados Pessoais”.</p>
+
+		    <p>2) Qual é a entidade responsável pela recolha da informação?</p>
+
+		<p>A PCA-MFCR é a única responsável pela recolha de dados pessoais efetuada no sítio online plataforma.edu.pt.</p>
+
+		    <p>3) Como é utilizada a informação recolhida?</p>
+
+		<p>A informação recolhida servirá apenas para os seguintes propósitos:</p>
+
+			<ul>
+				<li>– elaboração de estatísticas que permitam perceber como a PCA-MFCR poderá melhorar o nível de serviços que presta e, dessa forma, corresponder mais eficazmente às expectativas dos utilizadores;</li>
+                <br></br>
+				<li>– aumentar o nível de personalização dos serviços para que se adequam, na maior medida possível, aos gostos e preferências dos utilizadores.</li>
+			</ul>
+
+		<p>Os dados pessoais fornecidos pelo utilizador serão utilizados exclusivamente para fins ligados à execução do respetivo propósito, bem como, se o utilizador assim o autorizar, para atividades de informação/divulgação.</p>
+
+		<p>A PCA-MFCR não procederá à venda, aluguer, partilha ou oferta dos dados fornecidos pelos utilizadores do sítio onlne plataforma.edu.pt, exceto nas situações previstas na presente política de privacidade.</p>
+
+		    <p>4) Que procedimentos de segurança tem o sítio online plataforma.edu.pt, que garantam ao utilizador a proteção dos seus        dados contra o acesso, a alteração ou a destruição não autorizada?</p>
+
+		<p>A PCA-MFCR toma todas as precauções necessárias e legalmente exigidas para garantir a proteção da informação recolhida junto dos seus utilizadores através do sítio online plataforma.edu.pt e respectivas aplicações. Estas precauções garantem a segurança online e offline dessa informação.</p>
+
+		    <p>5) De que forma pode o utilizador atualizar ou eliminar as informações que facultou previamente através do sítio online          plataforma.edu.pt?</p>
+
+		<p>No âmbito das condições de utilização do sítio online plataforma.edu.pt e de todos os seus serviços, o utilizador compromete-se a fornecer e a manter atualizados e verdadeiros todos os seus dados pessoais. Por sua vez, a PCA-MFCR garante ao utilizador  a possibilidade de atualizar ou eliminar os seus dados. Para atualizar ou eliminar os seus dados deverá enviar uma mensagem de correio electrónico para  , tendo como assunto “Atualização de Dados Pessoais” ou “Eliminação de Dados Pessoais”.</p>
+
+		    <p>6) Outras questões de que deverá ter conhecimento sobre a política de privacidade.</p>
+
+		<ul>
+  			<li>Hiperligações (externas)</li>
+
+			<p>O sítio online plataforma.edu.pt contém hiperligações para outros sítios eletrónicos. A PCA-MFCR não se responsabiliza pelas políticas de privacidade desses mesmos sítios eletrónicos. Recomenda-se aos utilizadores do site plataforma.edu.pt que, quando acedam a outros sítios eletrónicos, consultem as páginas que, dentro desses sites, se refiram às suas políticas de privacidade. Este texto refere-se apenas à política de privacidade aplicável ao sítio online plataforma.edu.pt.</p>
+
+  			<li>Alteração de Condições de Utilização do sítio online plataforma.edu.pt</li>
+
+  			<p>Sempre que houver uma alteração das condições de utilização do sítio online plataforma.edu.pt, designadamente nas Condições de Serviço ou na Política de Privacidade, a PCA-MFCR notificará os utilizadores registados.</p>
+
+            <li>Autorização para Utilizações Diversas</li>
+		<p>Caso a PCA-MFCR pretender utilizar os dados dos utilizadores do seu sítio online para finalidades distintas daquelas para as quais recebeu autorização inicial dos utilizadores, solicitará uma nova autorização dos utilizadores essa utilização específica.</p>
+
+		<p>Caso surja qualquer dúvida sobre os pontos aqui apresentados, agradecemos que nos contacte através do endereço de correio electrónico info@plataforma.edu.pt</a>.</p>
+        </ul>
+        </div>]]>
+    </string>
+    <string name="Privacy_Policy_INFO_MAIN">
+        "O Município de Figueira de Castelo Rodrigo e, em particular, o projeto Plataforma de Ciência Aberta (PCA-MFCR) são responsáveis pelo sitío online plataforma.edu.pt e, deste modo, comprometem-se a garantir a privacidade dos dados pessoais recolhidos e/ou transmitidos online. A segurança e a privacidade dos dados dos visitantes do site plataforma.edu.pt são aspetos que assumem uma importância crucial, reservando-se o direito de alterar a política de privacidade, pelo que se aconselha a leitura regular deste documento. Estes textos reproduzem a política de privacidade seguida por nós.\n"
+                        "\n"
+                        "\n"
+                        "De seguida poderá encontrar informações específicas aos seguintes pontos:\n"
+                        "\n"
+                        "1)\tQual a informação que é recolhida?\n"
+                        "\n"
+                        "2)\tQual é a entidade responsável pela recolha da informação?\n"
+                        "\n"
+                        "3)\tComo é utilizada a informação recolhida?\n"
+                        "\n"
+                        "4)\tQue procedimentos de segurança tem o sítio online plataforma.edu.pt, que garantam ao utilizador a proteção dos seus dados contra o acesso, a alteração ou a destruição não autorizada?\n"
+                        "\n"
+                        "5)\tDe que forma pode o utilizador atualizar ou eliminar as informações que facultou previamente através do sítio online plataforma.edu.pt?\n"
+                        "\n"
+                        "    6) Outras questões de que deverá ter conhecimento sobre a política de privacidade.\n"
+                        " \n"
+                        "\n"
+                        "Caso surja qualquer dúvida sobre os pontos aqui apresentados, agradecemos que nos contacte através do endereço de correio electrónico info@plataforma.edu.pt.\n"
+                        " \n"
+                        "    1) Qual a informação que é recolhida?\n"
+                        " \n"
+                        "Para os mais variados propósitos, existem alguns formulários no sítio online plataforma.edu.pt, que solicitam dados pessoais. A informação recolhida é a necessária para assegurar a identidade do utilizador e o bom funcionamento das atividades e objetivos a que se propõem. A informação que o utilizador tem por objetivo a prestação de um serviço mais adequado às suas características e necessidades e ao envio de informações relacionadas com a utilização dos serviços prestados pela PCA-MFCR. O utilizador poderá atualizar as informações por si fornecidas, sempre que quiser, bastando para isso enviar uma mensagem de correio electrónico para  , tendo como assunto “Atualização de Dados Pessoais”.\n"
+                        " \n"
+                        "    2) Qual é a entidade responsável pela recolha da informação?\n"
+                        " \n"
+                        "A PCA-MFCR é a única responsável pela recolha de dados pessoais efetuada no sítio online plataforma.edu.pt.\n"
+                        "   \n"
+                        "    3) Como é utilizada a informação recolhida?\n"
+                        "\n"
+                        "A informação recolhida servirá apenas para os seguintes propósitos:\n"
+                        "\n"
+                        "– elaboração de estatísticas que permitam perceber como a PCA-MFCR poderá melhorar o nível de serviços que presta e, dessa forma, corresponder mais eficazmente às expectativas dos utilizadores;\n"
+                        "\n"
+                        "– aumentar o nível de personalização dos serviços para que se adequam, na maior medida possível, aos gostos e preferências dos utilizadores.\n"
+                        "\n"
+                        "Os dados pessoais fornecidos pelo utilizador serão utilizados exclusivamente para fins ligados à execução do respetivo propósito, bem como, se o utilizador assim o autorizar, para atividades de informação/divulgação.\n"
+                        "\n"
+                        "A PCA-MFCR não procederá à venda, aluguer, partilha ou oferta dos dados fornecidos pelos utilizadores do sítio onlne plataforma.edu.pt, exceto nas situações previstas na presente política de privacidade.\n"
+                        "\n"
+                        "    4) Que procedimentos de segurança tem o sítio online plataforma.edu.pt, que garantam ao utilizador a proteção dos seus        dados contra o acesso, a alteração ou a destruição não autorizada?\n"
+                        " \n"
+                        "A PCA-MFCR toma todas as precauções necessárias e legalmente exigidas para garantir a proteção da informação recolhida junto dos seus utilizadores através do sítio online plataforma.edu.pt e respectivas aplicações. Estas precauções garantem a segurança online e offline dessa informação.\n"
+                        "\n"
+                        "    5) De que forma pode o utilizador atualizar ou eliminar as informações que facultou previamente através do sítio online          plataforma.edu.pt?\n"
+                        " \n"
+                        "No âmbito das condições de utilização do sítio online plataforma.edu.pt e de todos os seus serviços, o utilizador compromete-se a fornecer e a manter atualizados e verdadeiros todos os seus dados pessoais. Por sua vez, a PCA-MFCR garante ao utilizador  a possibilidade de atualizar ou eliminar os seus dados. Para atualizar ou eliminar os seus dados deverá enviar uma mensagem de correio electrónico para  , tendo como assunto “Atualização de Dados Pessoais” ou “Eliminação de Dados Pessoais”.\n"
+                        " \n"
+                        "    6) Outras questões de que deverá ter conhecimento sobre a política de privacidade.\n"
+                        "\n"
+                        "•\tHiperligações (externas)\n"
+                        " \n"
+                        "O sítio online plataforma.edu.pt contém hiperligações para outros sítios eletrónicos. A PCA-MFCR não se responsabiliza pelas políticas de privacidade desses mesmos sítios eletrónicos. Recomenda-se aos utilizadores do site plataforma.edu.pt que, quando acedam a outros sítios eletrónicos, consultem as páginas que, dentro desses sites, se refiram às suas políticas de privacidade. Este texto refere-se apenas à política de privacidade aplicável ao sítio online plataforma.edu.pt.\n"
+                        "\n"
+                        "•\tAlteração de Condições de Utilização do sítio online plataforma.edu.pt\n"
+                        " \n"
+                        "Sempre que houver uma alteração das condições de utilização do sítio online plataforma.edu.pt, designadamente nas Condições de Serviço ou na Política de Privacidade, a PCA-MFCR notificará os utilizadores registados.\n"
+                        "\n"
+                        "•\tAutorização para Utilizações Diversas\n"
+                        " \n"
+                        "Caso a PCA-MFCR pretender utilizar os dados dos utilizadores do seu sítio online para finalidades distintas daquelas para as quais recebeu autorização inicial dos utilizadores, solicitará uma nova autorização dos utilizadores essa utilização específica.\n"
+                        " \n"
+                        "Caso surja qualquer dúvida sobre os pontos aqui apresentados, agradecemos que nos contacte através do endereço de correio electrónico info@plataforma.edu.pt.\n"
+        ​</string>
+    <string name="Info_About_APP">
+        <![CDATA[<div style="text-align: justify;">
+                <h2>Como utilizar esta aplicação</h2>
+        <p>O objetivo desta aplicação é dar a conhecer a diversidade geológica através da experiência de identificação. Pretende-se que seja uma ferramenta útil para conseguir identificar uma rocha, quer esta seja observada na natureza, em fotografia ou numa coleção.</p>
+
+        <p>Para iniciar a experiência de identificação, tem que ter a certeza absoluta que está perante uma rocha. As rochas são compostas por minerais e podem ser classificadas com base no seu tipo de formação: rochas ígneas, sedimentares e metamórficas. Cada tipo tem características específicas que permitem a sua identificação, como a composição mineral, a textura e o processo geológico que as originou.</p>
+
+        <p>A ordenação das rochas faz-se através de grupos, que se organizam por ordem decrescente de semelhança e origem geológica: a unidade básica da classificação das rochas é o Tipo; rochas com características semelhantes formam uma Subclasse. Depois destes dois níveis, segue-se o agrupamento de Subclasses parecidas numa Família, o agrupamento de Famílias parecidas numa Ordem, e finalmente a Classe, o Filo e o Reino. No caso da classe das rochas, a categoria da Ordem reúne grupos de rochas com características geológicas muito bem definidas, como as rochas ígneas, que incluem granitos, basaltos e andesitos, ou as rochas sedimentares, como arenitos e calcários.</p>
+
+        <p>A título de exemplo, o granito, uma rocha ígnea, é composto principalmente por quartzo, feldspato e mica. Esta rocha pertence à subclasse das rochas félsicas, na ordem das rochas ígneas, classe das rochas e filo das rochas sedimentares.</p>
+
+        <p>A diversidade de rochas é imensa. Em Portugal, há uma grande variedade de rochas que formam as diferentes paisagens geológicas do país. A classificação das rochas pode ser complexa, pois muitas rochas podem ter uma origem mista ou serem resultantes de processos geológicos diferentes ao longo do tempo.</p>
+
+        <p>Por exemplo, não há consenso entre os geólogos quanto à classificação de algumas rochas. Algumas rochas podem ser interpretadas de maneiras diferentes dependendo dos métodos de análise e da sua história geológica.</p>
+
+        <p>A chave de identificação que se apresenta de seguida permite identificar vários tipos de rochas. Para utilizar corretamente a chave, deverá observar atentamente a cor, a textura, a composição mineral e o processo geológico que formou o seu exemplar. Prevê-se que esta chave seja adequada para identificar as rochas mais comuns visíveis a olho nu, representando milhares de espécimes.</p>
+
+        <p>Após a identificação do tipo de rocha, pode consultar as características, particularidades e curiosidades do grupo e ainda imagens e comentários sobre algumas das rochas mais comuns.</p>
+
+        <p>Finalmente, se quiser contribuir para aumentar o conhecimento sobre a diversidade geológica em Portugal, saia para a rua e procure registar em fotografia a diversidade de rochas que encontra. Experimente identificar o tipo de rocha a que pertencem os exemplares que fotografou e envie as suas observações pessoais para <a href="https://www.geology.com/">www.geology.com</a>. Desta forma estará a contribuir para enriquecer uma base de dados utilizada tanto por profissionais como por amadores da Geologia.</p>
+		</div>]]
+
+        </p>
+		</div>]]>
+    </string>
+    <string name="getStarted">INICIAR</string>
+    <string name="next">PRÓXIMO</string>
+    <string name="skip">Pular</string>
+    <string name="save">Guardar</string>
+    <string name="coordinates">Localização:</string>
+    <string name="order">Ordem:</string>
+    <string name="date">Data/Hora:</string>
+    <string name="take_a_picture">Tirar uma Foto</string>
+    <string name="save_and_quit">Guardar nas minhas Rochas</string>
+    <string name="quit_without_saving">Sair sem Guardar</string>
+    <string name="close">Fechar</string>
+    <string name="tutor">Professor Tutor:</string>
+    <string name="special_thanks">Agradecimentos:</string>
+    <string name="load_picture">Carregar foto da galeria</string>
+    <string name="credits_book">Esta aplicação foi desenvolvida tendo por base a exposição "\"Insetos em Ordem."\"</string>
+    <string name="no_image_picked">Nenhuma imagem foi seleccionada</string>
+    <string name="io_exception">Houve uma falha</string>
+    <string name="no_coords">Esta imagem não contem coordenadas. Utilizando localização e data atual.</string>
+    <string name="coords_found">Metadados encontrados na imagem. Extraindo coordenadas e data.</string>
+    <string name="emailAddress">info@plataforma.edu.pt</string>
+    <string name="send_email">Submeter avistamento</string>
+    <string name="emailBody">Conheço a política de privacidade e dou total consentimento para utilização da informação enviada. plataforma.edu.pt\n</string>
+    <string name="emailSubject">A minha rocha</string>
+    <string name="correct_order">Corrigir ordem do inseto</string>
+    <string name="delete_insect">Apagar inseto</string>
+    <string name="cancel">Cancelar</string>
+    <string name="moreinfo">Mais informação...</string>
+    <string name="moreinfotext">Classe</string>
+    <string name="developer_time">Aplicação desenvolvida por:</string>
+    <string name="developers">Programadores</string>
+    <string name="developer_names">João Barros - IP Beja\nJosé Rodrigues - IP Beja\nJosé Varela - PCA\nNuno Marques - IP Beja\nVasco Flores - IP Beja\n Simão Frade - IP Beja\n Watna Camala - IP Beja\n António Rosa - IP Beja\n Bruno Guerra - IP Beja\n Laura Melissa - IP Beja</string>
+    <string name="reviewer">Revisores</string>
+    <string name="reviewer_name">Ana Peso - PCA\nMaria Vicente - PCA\nPaulo Jorge Lourenço - PCA </string>
+    <string name="designer">Designer</string>
+    <string name="designer_name">Aneta Margraf-Druc - OSH</string>
+    <string name="contents">Conteúdos</string>
+    <string name="contents_name">Eva Monteiro\nPatrícia Garcia Pereira</string>
+    <string name="version">Versão Beta - Dezembro 2024</string>
+</resources>
