@@ -41,12 +41,12 @@
                 <option goto="R2">
                     <text>Sim, cheiro de barro</text>
                     <description>Cheiro de barro, várias cores, textura macia e friável</description>
-                    <imageLocation>images/argila A31.JPG</imageLocation>
+                    <imageLocation>images/argilaA31.JPG</imageLocation>
                 </option>
                 <option goto="R3">
                     <text>Não, mas reage ao HCl</text>
                     <description>Compacto, forte efervescência com HCl, cor clara ou preta</description>
-                    <imageLocation>images/Calcário A32.JPG</imageLocation>
+                    <imageLocation>images/calcarioA32.JPG</imageLocation>
                 </option>
             </options>
         </node>
@@ -90,7 +90,7 @@
                 <option goto="R6">
                     <text>Não, textura desagregada</text>
                     <description>Textura desagregada, móvel, fragmentos não unidos por cimento</description>
-                    <imageLocation>images/Areia B31.JPG</imageLocation>
+                    <imageLocation>images/areiaB31.JPG</imageLocation>
                 </option>
                 <option goto="R7">
                     <text>Sim, textura compacta</text>
@@ -110,12 +110,12 @@
         <result id="R2">
             <ordem>Argila</ordem>
             <description>Cheiro de barro; esfregado entre os dedos é macio; friável.</description>
-            <imageLocation>images/argila A31.jpg</imageLocation>
+            <imageLocation>images/argilaA31.jpg</imageLocation>
         </result>
         <result id="R3">
             <ordem>Calcário</ordem>
             <description>Compacto; riscado pelo canivete; forte efervescência com HCl.</description>
-            <imageLocation>images/calcario.jpg</imageLocation>
+            <imageLocation>images/calcarioA322.jpg</imageLocation>
         </result>
         <result id="R4">
             <ordem>Granito</ordem>
@@ -130,7 +130,7 @@
         <result id="R6">
             <ordem>Areia</ordem>
             <description>Textura desagregada, móvel, fragmentos inferiores a 2 mm.</description>
-            <imageLocation>images/areia B31.jpg</imageLocation>
+            <imageLocation>images/areiaB31.jpg</imageLocation>
         </result>
         <result id="R7">
             <ordem>Conglomerado</ordem>

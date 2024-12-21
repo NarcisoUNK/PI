@@ -41,12 +41,12 @@
                 <option goto="R2">
                     <text>Yes, smells like clay</text>
                     <description>Smells like clay; various colors; soft and friable when rubbed</description>
-                    <imageLocation>images/argila A31.JPG</imageLocation>
+                    <imageLocation>images/argilaA31.JPG</imageLocation>
                 </option>
                 <option goto="R3">
                     <text>No, but it reacts with HCl</text>
                     <description>Compact; scratched with a knife; strong effervescence with HCl; light or dark color</description>
-                    <imageLocation>images/Calcário A32.JPG</imageLocation>
+                    <imageLocation>images/calcarioA32.JPG</imageLocation>
                 </option>
             </options>
         </node>
@@ -90,12 +90,12 @@
                 <option goto="R6">
                     <text>No, loose texture</text>
                     <description>Loose texture, mobile, fragments not bound by cement</description>
-                    <imageLocation>images/Areia B31.JPG</imageLocation>
+                    <imageLocation>images/AreiaB31.JPG</imageLocation>
                 </option>
                 <option goto="R7">
                     <text>Yes, compact texture</text>
                     <description>Compact texture, fragments bound by cement</description>
-                    <imageLocation>images/Conglomerado B32.JPG</imageLocation>
+                    <imageLocation>images/conglomeradoB32.JPG</imageLocation>
                 </option>
             </options>
         </node>
@@ -110,12 +110,12 @@
         <result id="R2">
             <ordem>Clay</ordem>
             <description>Smells like clay; soft to the touch; friable when rubbed.</description>
-            <imageLocation>images/argila A31.jpg</imageLocation>
+            <imageLocation>images/argilaA31.JPG</imageLocation>
         </result>
         <result id="R3">
             <ordem>Limestone</ordem>
             <description>Compact; reacts strongly with HCl; light or dark in color.</description>
-            <imageLocation>images/calcario.jpg</imageLocation>
+            <imageLocation>images/calcarioA32.JPG</imageLocation>
         </result>
         <result id="R4">
             <ordem>Granite</ordem>
@@ -130,12 +130,12 @@
         <result id="R6">
             <ordem>Sand</ordem>
             <description>Loose texture, mobile, fragments smaller than 2 mm.</description>
-            <imageLocation>images/areia B31.jpg</imageLocation>
+            <imageLocation>images/AreiaB31.JPG</imageLocation>
         </result>
         <result id="R7">
             <ordem>Conglomerate</ordem>
             <description>Compact texture, fragments larger than 2 mm, bound by cement.</description>
-            <imageLocation>images/Conglomerado B32.jpg</imageLocation>
+            <imageLocation>images/conglomeradoB32.JPG</imageLocation>
         </result>
     </results>
 </key>
