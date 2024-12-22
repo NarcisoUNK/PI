@@ -13,7 +13,6 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 import pt.ipbeja.pi.piproject.R
 
 class IntroActivity : AppCompatActivity() {
@@ -37,22 +36,15 @@ class IntroActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
 
-        val prefs = getSharedPreferences("prefs", MODE_PRIVATE)
-        val firstStart = prefs.getBoolean("firstStart", true)
+        // Verificar se já foi iniciado antes
+        val prefs = getSharedPreferences("myPrefs", MODE_PRIVATE)
+        val isFirstStart = prefs.getBoolean("isFirstStart", true)
 
-
-        //check if app is about to be opened for the first time
-        if (firstStart) {
-            showStartDialog()
-        }
-
-        // when this activity is about to be launch we need to check if its opened before or not
-        if (restorePrefData()) {
+        if (!isFirstStart) {
             val mainActivity = Intent(applicationContext, MainActivity::class.java)
             startActivity(mainActivity)
-
-
-            //finish();
+            finish()
+            return
         }
 
         setContentView(R.layout.activity_intro)
@@ -120,74 +112,52 @@ class IntroActivity : AppCompatActivity() {
             }
             if (position == mList.size - 1) { // when we reach to the last screen
 
-                // TODO : show the GETSTARTED Button and hide the indicator and the next button
-
                 loaddLastScreen()
             }
         })
 
         // tablayout add change listener
-        tabIndicator.addOnTabSelectedListener(object : OnTabSelectedListener {
+        tabIndicator.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
                 if (tab.position == mList.size - 1) {
                     loaddLastScreen()
                 }
             }
 
-            override fun onTabUnselected(tab: TabLayout.Tab) {
-            }
+            override fun onTabUnselected(tab: TabLayout.Tab) {}
 
-            override fun onTabReselected(tab: TabLayout.Tab) {
-            }
+            override fun onTabReselected(tab: TabLayout.Tab) {}
         })
 
-
         // Get Started button click listener
-        btnGetStarted.setOnClickListener(View.OnClickListener { //open main activity
+        btnGetStarted.setOnClickListener(View.OnClickListener {
             val mainActivity = Intent(applicationContext, MainActivity::class.java)
             startActivity(mainActivity)
 
-            // also we need to save a boolean value to storage so next time when the user run the app
-            // it will know that he is already checked the intro screen activity
-            // using shared preferences for that process
-            savePrefsData()
+            // Salvar a preferência para que o tutorial não seja exibido novamente
+            val editor = prefs.edit()
+            editor.putBoolean("isFirstStart", false)
+            editor.apply()
+
             finish()
         })
 
         // skip button click listener
         tvSkip.setOnClickListener(View.OnClickListener { screenPager.setCurrentItem(mList.size) })
+
+        // Exibir o diálogo de política de privacidade na primeira execução
+        showPrivacyDialog()
     }
 
-    // Dialog message for privacy policy
-    private fun showStartDialog() {
+    private fun showPrivacyDialog() {
         AlertDialog.Builder(this)
             .setIcon(R.drawable.intro_2)
             .setTitle(R.string.Privacy_Policy)
             .setMessage(R.string.Privacy_Policy_INFO_MAIN)
             .setPositiveButton(
                 R.string.agree
-            ) { dialog, which -> dialog.dismiss() }
+            ) { dialog, _ -> dialog.dismiss() }
             .create().show()
-
-        // Make sure the dialog message does not show if in case the app has already
-        // been opened
-        val prefs = getSharedPreferences("prefs", MODE_PRIVATE)
-        val editor = prefs.edit()
-        editor.putBoolean("firstStart", false)
-        editor.apply()
-    }
-
-    private fun restorePrefData(): Boolean {
-        val pref = applicationContext.getSharedPreferences("myPrefs", MODE_PRIVATE)
-        val isIntroActivityOpnendBefore = pref.getBoolean("isIntroOpened", false)
-        return isIntroActivityOpnendBefore
-    }
-
-    private fun savePrefsData() {
-        val pref = applicationContext.getSharedPreferences("myPrefs", MODE_PRIVATE)
-        val editor = pref.edit()
-        editor.putBoolean("isIntroOpened", true)
-        editor.apply()
     }
 
     // show the GETSTARTED Button and hide the indicator and the next button
@@ -197,8 +167,6 @@ class IntroActivity : AppCompatActivity() {
         tvSkip.visibility = View.INVISIBLE
         tabIndicator.visibility = View.VISIBLE
 
-
-        // setup animation
         btnGetStarted.animation = btnAnim
     }
 }

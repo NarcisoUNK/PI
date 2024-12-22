@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key>
     <nodes>
-        <!-- Primeira pergunta -->
+        <!-- Primeira Pergunta -->
         <node id="Q1">
             <question>O seu exemplar possui minerais ou fragmentos visíveis a olho nu?</question>
             <options>
                 <option goto="Q2">
                     <text>Sim, possui minerais ou fragmentos visíveis</text>
                     <description>Com minerais ou fragmentos visíveis a olho nu</description>
-                    <imageLocation>images/B1.jpg</imageLocation>
+                    <imageLocation>images/B1.JPG</imageLocation>
                 </option>
                 <option goto="Q3">
                     <text>Não, não possui minerais ou fragmentos visíveis</text>
@@ -20,32 +20,48 @@
 
         <!-- Perguntas para "Sem minerais ou fragmentos visíveis" -->
         <node id="Q3">
-            <question>O exemplar é total ou parcialmente vítreo?</question>
+            <question>O exemplar possui textura vítrea?</question>
             <options>
-                <option goto="R1">
+                <option goto="Q4">
                     <text>Sim, vítreo</text>
-                    <description>Total ou parcialmente vítreo</description>
+                    <description>Textura vítrea</description>
                     <imageLocation>images/a2.JPG</imageLocation>
                 </option>
-                <option goto="Q4">
+                <option goto="Q5">
                     <text>Não, não é vítreo</text>
-                    <description>Não-vitroso; homogêneo e de grão tão fino que não se distinguem grãos individuais</description>
+                    <description>Não vítreo; opaco; homogêneo com grãos muito finos para distinguir</description>
                     <imageLocation>images/A3.JPG</imageLocation>
                 </option>
             </options>
         </node>
 
         <node id="Q4">
+            <question>O exemplar é vesicular?</question>
+            <options>
+                <option goto="R8">
+                    <text>Sim, vesicular</text>
+                    <description>Sólido, geralmente claro, vesicular e textura vítrea</description>
+                    <imageLocation>images/Pedra-pomes A22.JPG</imageLocation>
+                </option>
+                <option goto="R1">
+                    <text>Não, compacto</text>
+                    <description>Geralmente escura, sólida e com brilho vítreo brilhante</description>
+                    <imageLocation>images/obsidiana.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+
+        <node id="Q5">
             <question>O exemplar tem cheiro de barro quando bafejado?</question>
             <options>
                 <option goto="R2">
                     <text>Sim, cheiro de barro</text>
-                    <description>Cheiro de barro, várias cores, textura macia e friável</description>
+                    <description>Cheiro de barro; várias cores; macio e friável ao toque</description>
                     <imageLocation>images/argilaA31.JPG</imageLocation>
                 </option>
                 <option goto="R3">
-                    <text>Não, mas reage ao HCl</text>
-                    <description>Compacto, forte efervescência com HCl, cor clara ou preta</description>
+                    <text>Não, mas reage com HCl</text>
+                    <description>Compacto; riscado por canivete; forte efervescência com HCl; cor clara ou escura</description>
                     <imageLocation>images/calcarioA32.JPG</imageLocation>
                 </option>
             </options>
@@ -53,14 +69,14 @@
 
         <!-- Perguntas para "Com minerais ou fragmentos visíveis" -->
         <node id="Q2">
-            <question>Os grãos do exemplar se individualizam a olho nu?</question>
+            <question>Os grãos do exemplar podem ser distinguidos a olho nu?</question>
             <options>
-                <option goto="Q5">
-                    <text>Sim, os grãos se individualizam</text>
-                    <description>Grãos que se individualizam a olho nu</description>
+                <option goto="Q6">
+                    <text>Sim, os grãos são distinguíveis</text>
+                    <description>Grãos distinguíveis a olho nu</description>
                     <imageLocation>images/B2.JPG</imageLocation>
                 </option>
-                <option goto="Q6">
+                <option goto="Q7">
                     <text>Não, possui composição fragmentária</text>
                     <description>Composição fragmentária</description>
                     <imageLocation>images/B3.JPG</imageLocation>
@@ -68,7 +84,7 @@
             </options>
         </node>
 
-        <node id="Q5">
+        <node id="Q6">
             <question>O exemplar possui foliação?</question>
             <options>
                 <option goto="R4">
@@ -84,18 +100,18 @@
             </options>
         </node>
 
-        <node id="Q6">
-            <question>Os fragmentos são unidos por cimento?</question>
+        <node id="Q7">
+            <question>Os fragmentos estão unidos por cimento?</question>
             <options>
                 <option goto="R6">
                     <text>Não, textura desagregada</text>
                     <description>Textura desagregada, móvel, fragmentos não unidos por cimento</description>
-                    <imageLocation>images/areiaB31.JPG</imageLocation>
+                    <imageLocation>images/AreiaB31.JPG</imageLocation>
                 </option>
                 <option goto="R7">
                     <text>Sim, textura compacta</text>
                     <description>Textura compacta, fragmentos unidos por cimento</description>
-                    <imageLocation>images/Conglomerado B32.JPG</imageLocation>
+                    <imageLocation>images/conglomeradoB32.JPG</imageLocation>
                 </option>
             </options>
         </node>
@@ -104,38 +120,43 @@
     <results>
         <result id="R1">
             <ordem>Obsidiana</ordem>
-            <description>Geralmente de cor escura, sólido e de brilho vítreo brilhante.</description>
+            <description>Geralmente escura, sólida e com brilho vítreo brilhante.</description>
             <imageLocation>images/obsidiana.jpg</imageLocation>
         </result>
         <result id="R2">
             <ordem>Argila</ordem>
-            <description>Cheiro de barro; esfregado entre os dedos é macio; friável.</description>
-            <imageLocation>images/argilaA31.jpg</imageLocation>
+            <description>Cheiro de barro; macia ao toque; friável quando esfregada.</description>
+            <imageLocation>images/argilaA31.JPG</imageLocation>
         </result>
         <result id="R3">
             <ordem>Calcário</ordem>
-            <description>Compacto; riscado pelo canivete; forte efervescência com HCl.</description>
-            <imageLocation>images/calcarioA322.jpg</imageLocation>
+            <description>Compacto; reage fortemente com HCl; cor clara ou escura.</description>
+            <imageLocation>images/calcarioA32.JPG</imageLocation>
         </result>
         <result id="R4">
             <ordem>Granito</ordem>
-            <description>Maciço, composto por quartzo e feldspato; grãos de tamanhos semelhantes.</description>
+            <description>Maciço, composto por quartzo e feldspato; grãos de tamanho semelhante.</description>
             <imageLocation>images/Granito B42.JPG</imageLocation>
         </result>
         <result id="R5">
             <ordem>Gnaisse</ordem>
-            <description>Textura granular, com grãos minerais orientados.</description>
+            <description>Textura granular com grãos minerais orientados em camadas.</description>
             <imageLocation>images/Gnaisse B52.JPG</imageLocation>
         </result>
         <result id="R6">
             <ordem>Areia</ordem>
-            <description>Textura desagregada, móvel, fragmentos inferiores a 2 mm.</description>
-            <imageLocation>images/areiaB31.jpg</imageLocation>
+            <description>Textura desagregada, móvel, fragmentos menores que 2 mm.</description>
+            <imageLocation>images/AreiaB31.JPG</imageLocation>
         </result>
         <result id="R7">
             <ordem>Conglomerado</ordem>
-            <description>Textura compacta, fragmentos maiores de 2 mm, unidos por cimento.</description>
-            <imageLocation>images/Conglomerado B32.jpg</imageLocation>
+            <description>Textura compacta, fragmentos maiores que 2 mm, unidos por cimento.</description>
+            <imageLocation>images/conglomeradoB32.JPG</imageLocation>
+        </result>
+        <result id="R8">
+            <ordem>Pedra-Pomes</ordem>
+            <description>Sólida, geralmente clara, vesicular e textura vítrea.</description>
+            <imageLocation>images/Pedra-pomes A22.JPG</imageLocation>
         </result>
     </results>
 </key>

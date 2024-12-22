@@ -3,15 +3,15 @@
     <nodes>
         <!-- First Question -->
         <node id="Q1">
-            <question>Does your sample have visible minerals or fragments?</question>
+            <question>Does your sample have visible minerals or fragments to the naked eye?</question>
             <options>
                 <option goto="Q2">
-                    <text>Yes, it has visible minerals or fragments</text>
+                    <text>Yes, visible minerals or fragments</text>
                     <description>With visible minerals or fragments</description>
                     <imageLocation>images/B1.JPG</imageLocation>
                 </option>
                 <option goto="Q3">
-                    <text>No, it does not have visible minerals or fragments</text>
+                    <text>No, no visible minerals or fragments</text>
                     <description>Without visible minerals or fragments</description>
                     <imageLocation>images/a1.jpg</imageLocation>
                 </option>
@@ -20,14 +20,14 @@
 
         <!-- Questions for "Without visible minerals or fragments" -->
         <node id="Q3">
-            <question>Is the sample fully or partially vitreous?</question>
+            <question>Does the sample have a vitreous texture?</question>
             <options>
-                <option goto="R1">
+                <option goto="Q4">
                     <text>Yes, vitreous</text>
-                    <description>Fully or partially vitreous</description>
+                    <description>Vitreous texture</description>
                     <imageLocation>images/a2.JPG</imageLocation>
                 </option>
-                <option goto="Q4">
+                <option goto="Q5">
                     <text>No, not vitreous</text>
                     <description>Not vitreous; dull; homogeneous with grains too fine to distinguish</description>
                     <imageLocation>images/A3.JPG</imageLocation>
@@ -36,16 +36,32 @@
         </node>
 
         <node id="Q4">
-            <question>Does the sample smell like clay when breathed upon?</question>
+            <question>Is the sample vesicular?</question>
+            <options>
+                <option goto="R8">
+                    <text>Yes, vesicular</text>
+                    <description>Solid, generally light-colored, vesicular, and vitreous texture</description>
+                    <imageLocation>images/Pedra-pomes A22.JPG</imageLocation>
+                </option>
+                <option goto="R1">
+                    <text>No, compact</text>
+                    <description>Generally dark, solid, and with bright vitreous luster</description>
+                    <imageLocation>images/obsidiana.jpg</imageLocation>
+                </option>
+            </options>
+        </node>
+
+        <node id="Q5">
+            <question>Does the sample smell like clay when breathed on?</question>
             <options>
                 <option goto="R2">
                     <text>Yes, smells like clay</text>
-                    <description>Smells like clay; various colors; soft and friable when rubbed</description>
+                    <description>Smells like clay; various colors; soft and friable to the touch</description>
                     <imageLocation>images/argilaA31.JPG</imageLocation>
                 </option>
                 <option goto="R3">
-                    <text>No, but it reacts with HCl</text>
-                    <description>Compact; scratched with a knife; strong effervescence with HCl; light or dark color</description>
+                    <text>No, but reacts with HCl</text>
+                    <description>Compact; scratches with a knife; strong effervescence with HCl; light or dark color</description>
                     <imageLocation>images/calcarioA32.JPG</imageLocation>
                 </option>
             </options>
@@ -53,22 +69,22 @@
 
         <!-- Questions for "With visible minerals or fragments" -->
         <node id="Q2">
-            <question>Can the grains of the sample be distinguished with the naked eye?</question>
+            <question>Can the grains in the sample be distinguished with the naked eye?</question>
             <options>
-                <option goto="Q5">
+                <option goto="Q6">
                     <text>Yes, grains are distinguishable</text>
-                    <description>Grains distinguishable with the naked eye</description>
+                    <description>Grains distinguishable to the naked eye</description>
                     <imageLocation>images/B2.JPG</imageLocation>
                 </option>
-                <option goto="Q6">
-                    <text>No, it has a fragmentary composition</text>
-                    <description>Fragmentary composition</description>
+                <option goto="Q7">
+                    <text>No, fragmental composition</text>
+                    <description>Fragmental composition</description>
                     <imageLocation>images/B3.JPG</imageLocation>
                 </option>
             </options>
         </node>
 
-        <node id="Q5">
+        <node id="Q6">
             <question>Does the sample have foliation?</question>
             <options>
                 <option goto="R4">
@@ -84,17 +100,17 @@
             </options>
         </node>
 
-        <node id="Q6">
-            <question>Are the fragments bound together by cement?</question>
+        <node id="Q7">
+            <question>Are the fragments cemented together?</question>
             <options>
                 <option goto="R6">
                     <text>No, loose texture</text>
-                    <description>Loose texture, mobile, fragments not bound by cement</description>
+                    <description>Loose texture, mobile, fragments not cemented</description>
                     <imageLocation>images/AreiaB31.JPG</imageLocation>
                 </option>
                 <option goto="R7">
                     <text>Yes, compact texture</text>
-                    <description>Compact texture, fragments bound by cement</description>
+                    <description>Compact texture, fragments cemented</description>
                     <imageLocation>images/conglomeradoB32.JPG</imageLocation>
                 </option>
             </options>
@@ -104,7 +120,7 @@
     <results>
         <result id="R1">
             <ordem>Obsidian</ordem>
-            <description>Usually dark in color, solid, with a brilliant vitreous shine.</description>
+            <description>Generally dark, solid, and with bright vitreous luster.</description>
             <imageLocation>images/obsidiana.jpg</imageLocation>
         </result>
         <result id="R2">
@@ -114,17 +130,17 @@
         </result>
         <result id="R3">
             <ordem>Limestone</ordem>
-            <description>Compact; reacts strongly with HCl; light or dark in color.</description>
+            <description>Compact; reacts strongly with HCl; light or dark color.</description>
             <imageLocation>images/calcarioA32.JPG</imageLocation>
         </result>
         <result id="R4">
             <ordem>Granite</ordem>
-            <description>Massive, composed of quartz and feldspar; grains of similar size.</description>
+            <description>Massive, composed of quartz and feldspar; similar grain size.</description>
             <imageLocation>images/Granito B42.JPG</imageLocation>
         </result>
         <result id="R5">
             <ordem>Gneiss</ordem>
-            <description>Granular texture with mineral grains oriented in layers.</description>
+            <description>Granular texture with oriented mineral grains in layers.</description>
             <imageLocation>images/Gnaisse B52.JPG</imageLocation>
         </result>
         <result id="R6">
@@ -134,8 +150,13 @@
         </result>
         <result id="R7">
             <ordem>Conglomerate</ordem>
-            <description>Compact texture, fragments larger than 2 mm, bound by cement.</description>
+            <description>Compact texture, fragments larger than 2 mm, cemented.</description>
             <imageLocation>images/conglomeradoB32.JPG</imageLocation>
+        </result>
+        <result id="R8">
+            <ordem>Pumice</ordem>
+            <description>Solid, generally light-colored, vesicular, and vitreous texture.</description>
+            <imageLocation>images/Pedra-pomes A22.JPG</imageLocation>
         </result>
     </results>
 </key>
