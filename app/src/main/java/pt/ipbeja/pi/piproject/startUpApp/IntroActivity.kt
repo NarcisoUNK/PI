@@ -63,35 +63,24 @@ class IntroActivity : AppCompatActivity() {
         val mList: MutableList<ScreenItem> = ArrayList()
         mList.add(
             ScreenItem(
-                "Sobre a aplicação / About app",
-                """
-                (PT) O objectivo deste aplicação é dar a conhecer a diversidade de insetos através da experiência de identificação.
-                (EN) The purpose of this application is to make known the diversity of insects through the identification experience.
-                
-                
-                """.trimIndent(), R.drawable.intro_2
+                getString(R.string.titleInfo),
+                getString(R.string.intro_text1),
+
             )
         )
         mList.add(
             ScreenItem(
-                "Sobre a aplicação / About app",
-                """
-                (PT) Para iniciar a experiência de identificação tem que ter a certeza absoluta que está perante um inseto.
-                (EN) To start the identification experiment you have to be absolutely certain that you are facing an insect.
-                
-                
-                """.trimIndent(), R.drawable.intro_2
+
+                getString(R.string.titleInfo),
+                getString(R.string.intro_text2),
+
             )
         )
         mList.add(
             ScreenItem(
-                "Sobre a aplicação / About app",
-                """
-                (PT) Na página de Créditos encontra-se a informação completa sobre o funcionamento da aplicação.
-                (EN) On the Credits page you will find the complete information on the operation of the application.
-                
-                
-                """.trimIndent(), R.drawable.intro_2
+                getString(R.string.titleInfo),
+                getString(R.string.intro_text3),
+
             )
         )
 
@@ -151,7 +140,7 @@ class IntroActivity : AppCompatActivity() {
 
     private fun showPrivacyDialog() {
         AlertDialog.Builder(this)
-            .setIcon(R.drawable.intro_2)
+           // .setIcon(R.drawable.intro_2)
             .setTitle(R.string.Privacy_Policy)
             .setMessage(R.string.Privacy_Policy_INFO_MAIN)
             .setPositiveButton(

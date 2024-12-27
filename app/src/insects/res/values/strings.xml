@@ -1,0 +1,251 @@
+<resources>
+    <string name="app_name">Insects in Order</string>
+    <string name="title">Insects in Order</string>
+    <string name="titleInfo">Information about the application</string>
+    <string name="intro_text1">The purpose of this application is to make known the diversity of insects through the identification experience.</string>
+    <string name="intro_text2">To start the identification experiment you have to be absolutely certain that you are facing an insect.</string>
+    <string name="intro_text3">On the Credits page you will find the complete information on the operation of the application.</string>
+    <string name="agree">AGREE</string>
+    <string name="option_a">option a</string>
+    <string name="option_b">option b</string>
+    <string name="identification">Identification</string>
+    <string name="my_insects">My Insects</string>
+    <string name="credits">Credits</string>
+    <string name="Privacy_Policy">PRIVACY POLICY</string>
+    <string name="Privacy_Policy_INFO">
+        <![CDATA[<div style="text-align: justify;">
+        <h1>PRIVACY POLICY</h1>
+
+		<p>The Municipality of Figueira de Castelo Rodrigo and, in particular, the Open Science Platform (PCA-MFCR) project are responsible for the site online <a href="https://www.plataforma.edu.pt/"> plataforma.edu.pt</a> and, therefore, undertake to guarantee the privacy of the personal data collected and / or transmitted online. The security and privacy of the data of the visitors of the site platform.edu.pt are aspects that are of crucial importance, reserving the right to change the privacy policy, so it is advisable to read this document regularly. These texts reproduce the privacy policy followed by us.</p>
+
+		<p>Below you will find specific information on the following points:</p>
+
+		<ol>
+		  <li>What information is collected?</li>
+            <br></br>
+		  <li>Who is responsible for collecting information?</li>
+            <br></br>
+		  <li> How is the information collected used?</li>
+            <br></br>
+		  <li>What security procedures does the online site plataforma.edu.pt, which guarantee the user the protection of your data against unauthorized access, alteration or destruction?</li>
+            <br></br>
+		  <li>In what way can the user update or delete the information he / she has previously provided through the site plataforma.edu.pt?</li>
+            <br></br>
+		  <li>Other issues you should know about the privacy policy.</li>
+		</ol>
+
+
+		<p>If you have any questions about the points presented here, please contact us at info@plataforma.edu.pt.</p>
+
+		    <p>1)What information is collected?</p>
+
+		<p>For the most varied purposes, there are some forms on the site platform.edu.pt that request personal data. The information collected is necessary to ensure the identity of the user and the proper functioning of the activities and objectives that they propose. The information that the user has for the purpose of providing a service more appropriate to its characteristics and needs and sending information related to the use of the services provided by PCA-MFCR. The user may update the information provided by him, whenever he wishes, by sending an email to info@plataforma.edu.pt, with the subject "Updating of Personal Data".</p>
+
+		    <p>2) Who is responsible for collecting information?</p>
+
+		<p>PCA-MFCR is solely responsible for the collection of personal data made on the site platform.edu.pt.</p>
+
+		    <p>3) How is the information collected used?</p>
+
+		<p>The information collected will serve only the following purposes:</p>
+
+			<ul>
+				<li>- the compilation of statistics to show how PCA-MFCR can improve the level of services it provides and, in this way, respond more effectively to users expectations;</li>
+                <br></br>
+				<li>- increase the level of customization of services to suit the tastes and preferences of users as much as possible.</li>
+			</ul>
+
+		<p>The personal data provided by the user will be used exclusively for purposes related to the execution of its purpose, as well as, if the user so authorizes, for information / dissemination activities.</p>
+
+		<p>PCA-MFCR will not sell, rent, share or offer data provided by the users of the site onlne plataforma.edu.pt, except in the situations set forth in this privacy policy.</p>
+
+		    <p>4) What security procedures does the online site plataforma.edu.pt, which guarantee the user the protection of your data against unauthorized access, alteration or destruction?</p>
+
+		<p>PCA-MFCR takes all necessary and legally required precautions to ensure the protection of the information collected from its users through the platform.edu.pt site and its applications. These precautions ensure online and offline security of this information.</p>
+
+		    <p>5) In what way can the user update or delete the information he / she has previously provided through the site plataforma.edu.pt?</p>
+
+		<p>In the context of the conditions of use of the site platform.edu.pt online and all its services, the user undertakes to provide and keep updated and true all their personal data. In turn, PCA-MFCR guarantees the user the possibility of updating or deleting their data. To update or delete your data you should send an email to info@plataforma.edu.pt, with the subject "Update of Personal Data" or "Elimination of Personal Data".</p>
+
+		    <p>6) Other issues you should know about the privacy policy.</p>
+
+		<ul>
+  			<li>Links (external)</li>
+
+			<p>The site platform.edu.pt contains links to other websites. PCA-MFCR is not responsible for the privacy policies of these same websites. It is recommended to the users of the site platform.edu.pt that, when they access other electronic sites, consult the pages that, within these sites, refer to their privacy policies. This text only refers to the privacy policy applicable to the site platform.edu.pt.</p>
+
+  			<li>Change of Conditions of Use of the site online at platform.edu.pt</li>
+
+  			<p>Whenever there is a change in the conditions of use of the site platform.edu.pt online, namely in the Terms of Service or in the Privacy Policy, PCA-MFCR will notify registered users.</p>
+
+		 	<li>Authorization for Miscellaneous Uses</li>
+
+		<p>If PCA-MFCR intends to use the data of users of its online site for purposes other than those for which it received initial authorization from users, it will request a new authorization from users for that specific use.</p>
+
+		<p>If you have any questions about the points presented here, please contact us at info@plataforma.edu.pt.</p>
+		</ul>
+		</div>]]>
+    </string>
+    <string name="Privacy_Policy_INFO_MAIN">"The Municipality of Figueira de Castelo Rodrigo and, in particular, the Open Science Platform (PCA-MFCR) project are responsible for the site online platform.edu.pt and, therefore, undertake to guarantee the privacy of the personal data collected and / or transmitted online. The security and privacy of the data of the visitors of the site platform.edu.pt are aspects that are of crucial importance, reserving the right to change the privacy policy, so it is advisable to read this document regularly. These texts reproduce the privacy policy followed by us.\n"
+                        "\n"
+                        "\n"
+                        "\n"
+                        "Below you will find specific information on the following points:\n"
+                        "\n"
+                        "\n"
+                        "    1) What information is collected?\n"
+                        "\n"
+                        "    2) Who is responsible for collecting information?\n"
+                        "\n"
+                        "    3) How is the information collected used?\n"
+                        "\n"
+                        "    4) What security procedures does the online site plataforma.edu.pt, which guarantee the user the protection of your data against unauthorized access, alteration or destruction?\n"
+                        "\n"
+                        "    5) In what way can the user update or delete the information he / she has previously provided through the site plataforma.edu.pt?\n"
+                        "\n"
+                        "    6) Other issues you should know about the privacy policy.\n"
+                        "\n"
+                        "\n"
+                        "\n"
+                        "If you have any questions about the points presented here, please contact us at info@plataforma.edu.pt.\n"
+                        "\n"
+                        "\n"
+                        "\n"
+                        "    1) What information is collected?\n"
+                        "\n"
+                        "\n"
+                        "For the most varied purposes, there are some forms on the site platform.edu.pt that request personal data. The information collected is necessary to ensure the identity of the user and the proper functioning of the activities and objectives that they propose. The information that the user has for the purpose of providing a service more appropriate to its characteristics and needs and sending information related to the use of the services provided by PCA-MFCR. The user may update the information provided by him, whenever he wishes, by sending an email to info@plataforma.edu.pt, with the subject \"Updating of Personal Data\".\n"
+                        "\n"
+                        "\n"
+                        "\n"
+                        "    2) Who is responsible for collecting information?\n"
+                        "\n"
+                        "\n"
+                        "PCA-MFCR is solely responsible for the collection of personal data made on the site platform.edu.pt.\n"
+                        "\n"
+                        "\n"
+                        "\n"
+                        "    3) How is the information collected used?\n"
+                        "\n"
+                        "\n"
+                        "The information collected will serve only the following purposes:\n"
+                        "\n"
+                        "\n"
+                        "- the compilation of statistics to show how PCA-MFCR can improve the level of services it provides and, in this way, respond more effectively to users expectations;\n"
+                        "\n"
+                        "- increase the level of customization of services to suit the tastes and preferences of users as much as possible.\n"
+                        "\n"
+                        "The personal data provided by the user will be used exclusively for purposes related to the execution of its purpose, as well as, if the user so authorizes, for information / dissemination activities.\n"
+                        "\n"
+                        "PCA-MFCR will not sell, rent, share or offer data provided by the users of the site onlne plataforma.edu.pt, except in the situations set forth in this privacy policy.\n"
+                        "\n"
+                        "\n"
+                        "    4) What security procedures does the online site plataforma.edu.pt, which guarantee the user the protection of your data against unauthorized access, alteration or destruction?\n"
+                        "\n"
+                        "\n"
+                        "PCA-MFCR takes all necessary and legally required precautions to ensure the protection of the information collected from its users through the platform.edu.pt site and its applications. These precautions ensure online and offline security of this information.\n"
+                        "\n"
+                        "\n"
+                        "\n"
+                        "    5) In what way can the user update or delete the information he / she has previously provided through the site plataforma.edu.pt?\n"
+                        "\n"
+                        "\n"
+                        "In the context of the conditions of use of the site platform.edu.pt online and all its services, the user undertakes to provide and keep updated and true all their personal data. In turn, PCA-MFCR guarantees the user the possibility of updating or deleting their data. To update or delete your data you should send an email to info@plataforma.edu.pt, with the subject \"Update of Personal Data\" or \"Elimination of Personal Data\".\n"
+                        "\n"
+                        "\n"
+                        "\n"
+                        "6) Other issues you should know about the privacy policy.\n"
+                        "\n"
+                        "\n"
+                        "Links (external)\n"
+                        "\n"
+                        "\n"
+                        "The site platform.edu.pt contains links to other websites. PCA-MFCR is not responsible for the privacy policies of these same websites. It is recommended to the users of the site platform.edu.pt that, when they access other electronic sites, consult the pages that, within these sites, refer to their privacy policies. This text only refers to the privacy policy applicable to the site platform.edu.pt.\n"
+                        "\n"
+                        "\n"
+                        "Change of Conditions of Use of the site online at platform.edu.pt\n"
+                        "\n"
+                        "\n"
+                        "Whenever there is a change in the conditions of use of the site platform.edu.pt online, namely in the Terms of Service or in the Privacy Policy, PCA-MFCR will notify registered users.\n"
+                        "\n"
+                        "\n"
+                        "\n"
+                        "Authorization for Miscellaneous Uses\n"
+                        "\n"
+                        "\n"
+                        "If PCA-MFCR intends to use the data of users of its online site for purposes other than those for which it received initial authorization from users, it will request a new authorization from users for that specific use.\n"
+                        "\n"
+                        "\n"
+                        "\n"
+                        "If you have any questions about the points presented here, please contact us at info@plataforma.edu.pt.\n"</string>
+    <string name="Info_About_APP">
+         <![CDATA[<div style="text-align: justify;">
+                <h2>How to use this application</h2>
+
+        <p>The purpose of this application is to make known the diversity of insects through the identification experience. It is intended to be a useful tool to identify an insect, whether it be observed in nature, in photography or in a collection.
+        </p>
+
+        <p>To start the identification experiment you have to be absolutely certain that you are facing an insect. These animals are arthropods that are distinguished from other invertebrates (such as spiders or crustaceans) especially for the following characteristics: division of the body into three parts - head, thorax and abdomen, presence of six legs and, in most species, one or two pairs of wings (no other invertebrates have wings). In the head have two antennae, compound eyes and the mouth, which is very important to distinguish different groups. In the thorax are the paws and the wings (when they exist), and in the abdomen the reproductive organs.
+        </p>
+
+        <p>The ordering of living beings is done through groups, which are organized in descending order of similarity and evolutionary kinship: the basic unit of classification of living beings is the Species; Similar species form a Gender. After these two levels, the grouping of Similar Genres in a Family follows, the grouping of similar Families in an Order, then the Class, the Phylum and finally the Kingdom. In the case of the Insecta class, the category of the Order includes groups of animals with very well defined morphological characteristics that allow the grouping of large insects: butterflies, dragonflies, grasshoppers or beetles belong to different orders.
+        </p>
+
+        <p>For example, the scientific name of the dragonfly in the image on the right page is Anax imperator. This species belongs to the genus Anax, to the family Aeshnidae, to the order Odonata, class Insecta, phylum Arthopoda and kingdom Animalia.
+        </p>
+
+        <p>The diversity of insects is immense. In Portugal alone, there are 30,000 species, of which about a third are still to be discovered. Faced with such diversity, classification becomes a difficult process, and even scientists are not always in agreement on how best to do so.
+        </p>
+
+        <p>For example, there is no consensus on the number of orders. Some scientists distribute all the insects in the world in 25 orders, while others even consider 35.</p>
+
+        <p>The identification key that follows allows identifying 16 orders of insects. To use the key correctly, you should carefully observe the legs, antennae, wings, appendages, and mouth of your specimen. It is anticipated that this key will be adequate to identify the orders of most common insects visible to the naked eye in Portugal, representing thousands of species.
+        </p>
+
+        <p>After identifying the order of the specimen, you can consult the characteristics, peculiarities and curiosities of the group and also images and comments on some of the most common species.
+        </p>
+
+        <p>Finally, if you want to contribute to increase knowledge about biodiversity in Portugal, which is the best way to conserve our natural heritage, go out into the street and try to record the diversity of insects you find. Try to identify the order in which the specimens you have photographed belong to and send your personal observations to <a href="https://www.biodiversity4all.org/">www.biodiversity4all.org</a>. In this way it will contribute to enrich a database used by both professionals and amateurs of Biodiversity.
+        </p></div>]]>
+    </string>
+    <string name="getStarted">GET STARTED</string>
+    <string name="next">NEXT</string>
+    <string name="skip">Skip</string>
+    <string name="save">Save</string>
+    <string name="coordinates">Location:</string>
+    <string name="order">Order:</string>
+    <string name="date">Date/Hour:</string>
+    <string name="take_a_picture">Take a Picture</string>
+    <string name="load_picture">Upload photo from gallery</string>
+    <string name="save_and_quit">Save on my insects</string>
+    <string name="quit_without_saving">Exit without Saving</string>
+    <string name="close">Close</string>
+    <string name="tutor">Tutor Teatcher:</string>
+    <string name="special_thanks">Thanks:</string>
+    <string name="credits_book">The development of this application was based on the exhibition "\" Insects in Order "\"</string>
+    <string name="no_image_picked">You haven\'t picked an Image</string>
+    <string name="io_exception">Something went wrong</string>
+    <string name="no_coords">The image does not contain coordinates. Using your current location and date.</string>
+    <string name="coords_found">Image metadata detected. Extracting coordinates and date.</string>
+    <string name="emailAddress">info@plataforma.edu.pt</string>
+    <string name="send_email">Submit sighting</string>
+    <string name="emailBody">I know the privacy policy and give full consent to use the information sent. plataforma.edu.pt\n</string>
+    <string name="emailSubject">My insect</string>
+    <string name="correct_order">Correct insect order</string>
+    <string name="delete_insect">Delete insect</string>
+    <string name="cancel">Cancel</string>
+    <string name="moreinfo">More information</string>
+    <string name="moreinfotext">Order</string>
+    <string name="developer_time">Applicaction developer by:</string>
+    <string name="developers">Developers</string>
+    <string name="developer_names">João Barros - IP Beja\nJosé Rodrigues - IP Beja\nJosé Varela - PCA\nNuno Marques - IP Beja\nVasco Flores - IP Beja</string>
+    <string name="reviewer">Reviewers</string>
+    <string name="reviewer_name">Ana Peso - PCA\nMaria Vicente - PCA\nPaulo Jorge Lourenço - PCA </string>
+    <string name="designer">Designer</string>
+    <string name="designer_name">Aneta Margraf-Druc - OSH</string>
+    <string name="contents">Contents</string>
+    <string name="contents_name">Eva Monteiro\nPatrícia Garcia Pereira</string>
+    <string name="version">Beta Version - July 2018</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

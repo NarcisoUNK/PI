@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo3"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo3"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".identificationInsect.MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+        <!-- <activity android:name=".IntroViewPagerAdapter"></activity> -->
+        <!-- <activity android:name=".ScreenItem" /> -->
+        <activity android:name=".startUpApp.MainActivity" />
+        <activity android:name=".credits.PrivacyPolicyInfo" />
+        <activity android:name=".credits.LeidenImageZoom" />
+        <activity android:name=".credits.CMFCRImageZoom" />
+        <activity android:name=".credits.Ce3cImageZoom" />
+        <activity android:name=".credits.MuhnacImageZoom" />
+        <activity android:name=".credits.PCAImageZoom" />
+        <activity android:name=".credits.TagisImageZoom" />
+        <activity android:name=".credits.IPBejaImageZoom" />
+        <activity android:name=".credits.Info" />
+        <activity
+            android:name=".startUpApp.IntroActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- <activity android:name=".IntroActivity" /> -->
+        <activity
+            android:name=".identificationInsect.Classificacao"
+            android:parentActivityName=".startUpApp.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".identificationInsect.ShowResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".identificationInsect.SaveIdentification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listSavedInsects.MyIdentifications"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".credits.Credits"
+            android:parentActivityName=".startUpApp.MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DuplicateActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <activity
+            android:name=".identificationInsect.ImageZoom"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

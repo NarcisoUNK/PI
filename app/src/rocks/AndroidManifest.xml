@@ -21,8 +21,9 @@
     <application
         tools:replace="android:icon"
         android:label="@string/app_name"
-        android:icon="@mipmap/ic_launcher"
-        android:logo="@mipmap/logo">
+        android:icon="@mipmap/rocklogo"
+        android:logo="@mipmap/rocklogo"
+        android:roundIcon="@mipmap/rocklogo">
         <activity
             android:name=".startUpApp.IntroActivity"
             android:exported="true">

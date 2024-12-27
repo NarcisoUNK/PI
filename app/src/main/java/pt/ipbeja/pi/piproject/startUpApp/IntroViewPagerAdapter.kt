@@ -21,7 +21,7 @@ class IntroViewPagerAdapter(var mContext: Context, var mListScreen: List<ScreenI
 
         title.text = mListScreen[position].title
         description.text = mListScreen[position].description
-        imgSlide.setImageResource(mListScreen[position].screenImg)
+        //imgSlide.setImageResource(mListScreen[position].screenImg)
 
         container.addView(layoutScreen)
 

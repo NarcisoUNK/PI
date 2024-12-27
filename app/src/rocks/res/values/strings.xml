@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">Rock Classes</string>
+    <string name="intro_text1">The purpose of this application is to explore different types of rocks and minerals through the classification experience.</string>
+    <string name="intro_text2">To start the classification process, make sure you are observing a rock or mineral.</string>
+    <string name="intro_text3">On the Credits page you will find complete information about the operation of the application.</string>
     <string name="title">Rock Classes</string>
-    <string name="titleInfo">Information about application</string>
+    <string name="titleInfo">Information about the application</string>
     <string name="agree">AGREE</string>
     <string name="option_a">option a</string>
     <string name="option_b">option b</string>
