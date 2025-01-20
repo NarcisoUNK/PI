@@ -236,9 +236,8 @@
     <string name="cancel">Cancel</string>
     <string name="moreinfo">More information</string>
     <string name="moreinfotext">Order</string>
-    <string name="developer_time">Applicaction developer by:</string>
     <string name="developers">Developers</string>
-    <string name="developer_names">João Barros - IP Beja\nJosé Rodrigues - IP Beja\nJosé Varela - PCA\nNuno Marques - IP Beja\nVasco Flores - IP Beja</string>
+    <string name="developer_names">João Barros - IP Beja\nJosé Rodrigues - IP Beja\nJosé Varela - PCA\nNuno Marques - IP Beja\nVasco Flores - IP Beja\n José Mauricio - IP Beja\n Rafael Narciso - IP Beja</string>
     <string name="reviewer">Reviewers</string>
     <string name="reviewer_name">Ana Peso - PCA\nMaria Vicente - PCA\nPaulo Jorge Lourenço - PCA </string>
     <string name="designer">Designer</string>

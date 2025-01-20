@@ -2,6 +2,7 @@ package pt.ipbeja.pi.piproject.identificationInsect
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
@@ -185,6 +186,25 @@ class SaveIdentification : AppCompatActivity() {
             }
         }
     }
+    fun onClickOpenPdf(nextView: View?) {
+        val takePdfIntent = Intent(Intent.ACTION_VIEW)
+
+        // Acessar o PDF do diretório 'raw'
+        val pdfUri = Uri.parse("android.resource://$packageName/raw/geomap")
+
+        // Verificar se existe um aplicativo para abrir PDF
+        takePdfIntent.setDataAndType(pdfUri, "application/pdf")
+        takePdfIntent.flags = Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_ACTIVITY_NEW_TASK
+
+        // Usar Intent.createChooser para garantir que o usuário possa escolher o aplicativo
+        try {
+            startActivity(Intent.createChooser(takePdfIntent, "Escolha um aplicativo para abrir o PDF"))
+        } catch (e: ActivityNotFoundException) {
+            Toast.makeText(this, "Nenhum aplicativo para abrir PDF encontrado", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+
 
     fun onClickLoadPicture(view: View?) {
         val photoPickerIntent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
@@ -334,6 +354,7 @@ class SaveIdentification : AppCompatActivity() {
     companion object {
         private const val PERMISSIONS_REQUEST_READ_LOCATION = 1
         private const val REQUEST_LOAD_IMAGE = 1
+        private const val REQUEST_OPEN_PDF = 1
         private const val REQUEST_TAKE_PHOTO = 2
     }
 }

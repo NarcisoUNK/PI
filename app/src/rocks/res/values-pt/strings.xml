@@ -189,7 +189,7 @@
     <string name="tutor">Professor Tutor:</string>
     <string name="special_thanks">Agradecimentos:</string>
     <string name="load_picture">Carregar foto da galeria</string>
-    <string name="credits_book">Esta aplicação foi desenvolvida tendo por base a exposição "\"Insetos em Ordem."\"</string>
+    <string name="credits_book">Chave Dicotomica por Sofia Soares, esta aplicação foi desenvolvida tendo por base a exposição "\"Insetos em Ordem."\" http://www.tagis.pt/insetos-em-ordem.html</string>
     <string name="no_image_picked">Nenhuma imagem foi seleccionada</string>
     <string name="io_exception">Houve uma falha</string>
     <string name="no_coords">Esta imagem não contem coordenadas. Utilizando localização e data atual.</string>
@@ -212,5 +212,5 @@
     <string name="designer_name">Aneta Margraf-Druc - OSH</string>
     <string name="contents">Conteúdos</string>
     <string name="contents_name">Eva Monteiro\nPatrícia Garcia Pereira</string>
-    <string name="version">Versão Beta - Dezembro 2024</string>
+    <string name="version">Versão Beta - Janeiro 2025</string>
 </resources>
