@@ -235,4 +235,5 @@
     <string name="contents_name">Eva Monteiro\nPatrícia Garcia Pereira</string>
     <string name="version">Versão Beta - Julho 2018</string>
     <string name="PDFPT">Carta Geologica</string>
+    <string name="title_activity_maps">Mapa</string>
 </resources>

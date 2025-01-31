@@ -59,10 +59,26 @@
                     <description>Cheiro de barro; várias cores; macio e friável ao toque</description>
                     <imageLocation>images/argilaA31.JPG</imageLocation>
                 </option>
+                <option goto="Q8">
+                    <text>Não</text>
+                    <description>.</description>
+                    <imageLocation>images/white_space.png</imageLocation>
+                </option>
+            </options>
+        </node>
+
+        <node id="Q8">
+            <question>O exemplar reage com HCl?</question>
+            <options>
                 <option goto="R3">
-                    <text>Não, mas reage com HCl</text>
+                    <text>Sim, Reage</text>
                     <description>Compacto; riscado por canivete; forte efervescência com HCl; cor clara ou escura</description>
                     <imageLocation>images/calcarioA32.JPG</imageLocation>
+                </option>
+                <option goto="R9">
+                    <text>Não</text>
+                    <description>Compacto; não riscado pelo canivete; sem efervescência com HCl, denso, cor escura, por vezes com cristais de olivina</description>
+                    <imageLocation>images/basalto.jpg</imageLocation>
                 </option>
             </options>
         </node>
@@ -157,6 +173,11 @@
             <ordem>Pedra-Pomes</ordem>
             <description>Sólida, geralmente clara, vesicular e textura vítrea.</description>
             <imageLocation>images/Pedra-pomes A22.JPG</imageLocation>
+        </result>
+        <result id="R9">
+            <ordem>Basalto</ordem>
+            <description>Compacto; não riscado pelo canivete; sem efervescência com HCl, denso, cor escura, por vezes com cristais de olivina</description>
+            <imageLocation>images/basalto.jpg</imageLocation>
         </result>
     </results>
 </key>

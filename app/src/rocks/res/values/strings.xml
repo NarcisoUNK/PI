@@ -1,14 +1,14 @@
 <resources>
-    <string name="app_name">Rock Classes</string>
-    <string name="intro_text1">The purpose of this application is to explore different types of rocks and minerals through the classification experience.</string>
-    <string name="intro_text2">To start the classification process, make sure you are observing a rock or mineral.</string>
-    <string name="intro_text3">On the Credits page you will find complete information about the operation of the application.</string>
-    <string name="title">Rock Classes</string>
-    <string name="titleInfo">Information about the application</string>
-    <string name="agree">AGREE</string>
+    <string name="app_name">Discovering Rocks</string>
+    <string name="title">Discovering Rocks</string>
+    <string name="titleInfo">Application Information</string>
+    <string name="intro_text1">The purpose of this application is to introduce some examples of rocks through an identification experience.</string>
+    <string name="intro_text2">To begin the identification experience, you must have a rock sample with a fresh fracture.</string>
+    <string name="intro_text3">On the Credits page, you can find complete information about how the application works.</string>
+    <string name="agree">ACCEPT</string>
     <string name="option_a">option a</string>
     <string name="option_b">option b</string>
-    <string name="identification">Identification</string>
+    <string name="identification">Identify</string>
     <string name="my_insects">My Rocks</string>
     <string name="credits">Credits</string>
     <string name="Privacy_Policy">PRIVACY POLICY</string>
@@ -179,34 +179,25 @@
                         "\n"
                         "If you have any questions about the points presented here, please contact us at info@plataforma.edu.pt.\n"</string>
     <string name="Info_About_APP">
-         <![CDATA[<div style="text-align: justify;">
-                <h2>How to use this application</h2>
+    <![CDATA[<div style="text-align: justify;">
+            <h2>How to use this application</h2>
+    <p>The purpose of this application is to introduce geological diversity through the identification experience. It is intended to be a useful tool for identifying a rock, whether observed in nature, in a photograph, or in a collection.</p>
 
-        <p>The purpose of this application is to make known the geological diversity through the identification experience. It is intended to be a useful tool to identify a rock, whether it be observed in nature, in photography or in a collection.
-        </p>
+    <p>To start the identification experience, you must be absolutely sure that you are looking at a rock and that it has a good exposure surface. Rocks are composed of minerals or fragments and can be classified based on their formation type, being grouped into three major divisions: magmatic or igneous rocks, sedimentary rocks, and metamorphic rocks. Each type has specific characteristics that allow its identification, such as mineral composition, texture, color, fragment type and shape, and the geological process that originated it.</p>
 
-        <p>To start the identification experiment you have to be absolutely certain that you are facing an insect. These rocks and how these rocks are distinguished from one another.
-        </p>
+    <p>Igneous rocks result from the cooling of molten masses (magmas or lavas). They mostly exhibit a crystalline texture. Sometimes, when cooling occurs rapidly, minerals cannot be distinguished with the naked eye, and the texture may be glassy. An example of an igneous rock is granite, which is mainly composed of quartz, feldspar, and mica. It is a light-colored rock (leucocratic), with a predominance of felsic minerals rich in elements such as silicon, aluminum, sodium, and potassium.</p>
 
-        <p>The ordering of living beings is done through groups, which are organized in descending order of similarity and evolutionary kinship: the basic unit of classification of living beings is the Species; Similar species form a Gender. After these two levels, the grouping of Similar Genres in a Family follows, the grouping of similar Families in an Order, then the Class, the Phylum and finally the Kingdom. In the case of the Insecta class, the category of the Order includes groups of animals with very well defined morphological characteristics that allow the grouping of large insects: butterflies, dragonflies, grasshoppers or beetles belong to different orders.
-        </p>
+    <p>Sedimentary rocks can have a predominantly detrital origin or a chemical and/or biogenic origin. Detrital rocks are composed of unconsolidated sediments (sand, clay) or consolidated ones (sandstone, conglomerate). Examples of rocks formed by chemical precipitates and/or sediments of biological origin include limestone, coal, and gypsum.
+Metamorphic rocks have a crystalline texture and may exhibit preferential alignment of their minerals—foliation (gneiss) or schistosity (schist). In schistosity, foliation is penetrative and separates the rock into "sheets." All rocks can give rise to metamorphic rocks, as the metamorphic process involves the transformation of minerals and/or the structure of the original rock. The factors that lead to changes in the physical conditions of the initial rock, transforming it into a metamorphic rock, are temperature, pressure, mineralized fluids, and time. Marble, for example, is the result of heat transformation of limestone.</p>
 
-        <p>For example, the scientific name of the dragonfly in the image on the right page is Anax imperator. This species belongs to the genus Anax, to the family Aeshnidae, to the order Odonata, class Insecta, phylum Arthopoda and kingdom Animalia.
-        </p>
+    <p>The diversity of rocks is immense. In Portugal, there is a great variety of rocks that shape the different geological landscapes of the country. Rock classification can be complex, and only with the aid of microscopic observations in thin sections and/or chemical analysis of its composition can its classification be determined.</p>
 
-        <p>The diversity of insects is immense. In Portugal alone, there are 30,000 species, of which about a third are still to be discovered. Faced with such diversity, classification becomes a difficult process, and even scientists are not always in agreement on how best to do so.
-        </p>
+    <p>The identification key presented below allows the identification of various types of rocks. To use the key correctly, you should carefully observe the color, texture, mineral composition, and, if necessary, consider the geological process that formed the specimen. This key is intended to be suitable for identifying the most common rocks with the naked eye. The application was developed with a focus on the curriculum content of the 3rd cycle.</p>
 
-        <p>For example, there is no consensus on the number of orders. Some scientists distribute all the insects in the world in 25 orders, while others even consider 35.</p>
+    <p>After identifying the type of rock, you can check its characteristics, particularities, and curiosities of the group, and save images of that type of rock.</p>
 
-        <p>The identification key that follows allows identifying 16 orders of insects. To use the key correctly, you should carefully observe the legs, antennae, wings, appendages, and mouth of your specimen. It is anticipated that this key will be adequate to identify the orders of most common insects visible to the naked eye in Portugal, representing thousands of species.
-        </p>
-
-        <p>After identifying the order of the specimen, you can consult the characteristics, peculiarities and curiosities of the group and also images and comments on some of the most common species.
-        </p>
-
-        <p>Finally, if you want to contribute to increase knowledge about biodiversity in Portugal, which is the best way to conserve our natural heritage, go out into the street and try to record the diversity of insects you find. Try to identify the order in which the specimens you have photographed belong to and send your personal observations to <a href="https://www.biodiversity4all.org/">www.biodiversity4all.org</a>. In this way it will contribute to enrich a database used by both professionals and amateurs of Biodiversity.
-        </p></div>]]>
+    <p>If you want to contribute to increasing knowledge about geological diversity in Portugal, go outside and try to photograph the variety of rocks you find. Try identifying the type of rock to which the specimens you photographed belong and send your personal observations to <a href="https://www.geology.com/">www.geology.com</a>. This way, you will be contributing to enriching a database used by both professionals and amateur geologists. Finally, if you want to increase your knowledge of geological diversity in Portugal, you can consult the geological mapping of the territory on the geoPortal of the National Laboratory of Energy and Geology (LNEG) at <a href="https://geoportal.lneg.pt/mapa/">geoportal.lneg.pt/mapa/</a>.</p>
+   </div>]]>
     </string>
     <string name="getStarted">GET STARTED</string>
     <string name="next">NEXT</string>
@@ -247,5 +238,6 @@
     <string name="contents_name">Eva Monteiro\nPatrícia Garcia Pereira</string>
     <string name="version">Beta Version - January 2025</string>
     <string name="title_activity_maps">Map</string>
+    <string name="Geology_Map">Visit Geology Map</string>
 
 </resources>

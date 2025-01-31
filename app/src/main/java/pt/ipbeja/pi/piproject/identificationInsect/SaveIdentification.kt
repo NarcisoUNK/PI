@@ -186,21 +186,14 @@ class SaveIdentification : AppCompatActivity() {
             }
         }
     }
-    fun onClickOpenPdf(nextView: View?) {
-        val takePdfIntent = Intent(Intent.ACTION_VIEW)
+    fun onClickOpenURL(nextView: View?) {
+        val geoportalUrl = "https://geoportal.lneg.pt/mapa/"
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(geoportalUrl))
 
-        // Acessar o PDF do diretório 'raw'
-        val pdfUri = Uri.parse("android.resource://$packageName/raw/geomap")
-
-        // Verificar se existe um aplicativo para abrir PDF
-        takePdfIntent.setDataAndType(pdfUri, "application/pdf")
-        takePdfIntent.flags = Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_ACTIVITY_NEW_TASK
-
-        // Usar Intent.createChooser para garantir que o usuário possa escolher o aplicativo
         try {
-            startActivity(Intent.createChooser(takePdfIntent, "Escolha um aplicativo para abrir o PDF"))
+            startActivity(intent)
         } catch (e: ActivityNotFoundException) {
-            Toast.makeText(this, "Nenhum aplicativo para abrir PDF encontrado", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Nenhum navegador encontrado", Toast.LENGTH_SHORT).show()
         }
     }
 
