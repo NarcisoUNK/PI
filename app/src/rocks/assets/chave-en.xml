@@ -1,183 +1,257 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key>
     <nodes>
-        <!-- First Question -->
+        <!-- Q1: Initial Question -->
         <node id="Q1">
             <question>Does your specimen have visible minerals or fragments to the naked eye?</question>
             <options>
-                <option goto="Q2">
+                <!-- If YES: via “With visible minerals” -->
+                <option goto="Q7">
                     <text>Yes, it has visible minerals or fragments</text>
-                    <description>With visible minerals or fragments to the naked eye</description>
+                    <description>Specimen with visible minerals or fragments</description>
                     <imageLocation>images/B1.JPG</imageLocation>
                 </option>
-                <option goto="Q3">
+                <!-- If NO: via “Without visible minerals” -->
+                <option goto="Q2">
                     <text>No, it does not have visible minerals or fragments</text>
-                    <description>Without visible minerals or fragments to the naked eye</description>
+                    <description>Specimen without visible minerals or fragments</description>
                     <imageLocation>images/a1.jpg</imageLocation>
                 </option>
             </options>
         </node>
 
-        <!-- Questions for "No visible minerals or fragments" -->
-        <node id="Q3">
-            <question>Does the specimen have a vitreous texture?</question>
+        <!-- VIA WITHOUT VISIBLE MINERALS (branch A) -->
+        <!-- Q2: Determines if the specimen is (partially or fully) vitreous -->
+        <node id="Q2">
+            <question>Is the specimen fully or partially vitreous?</question>
             <options>
-                <option goto="Q4">
-                    <text>Yes, vitreous</text>
-                    <description>Vitreous texture</description>
+                <!-- If YES: branch A2 -->
+                <option goto="Q3">
+                    <text>Yes, it is vitreous</text>
+                    <description>Specimen with vitreous appearance</description>
                     <imageLocation>images/a2.JPG</imageLocation>
                 </option>
-                <option goto="Q5">
-                    <text>No, not vitreous</text>
-                    <description>Not vitreous; opaque; homogeneous with very fine grains that are hard to distinguish</description>
+                <!-- If NO: branch A3 -->
+                <option goto="Q4">
+                    <text>No, it is not vitreous</text>
+                    <description>Non-vitreous specimen; opaque; with such fine grain that it cannot be distinguished</description>
                     <imageLocation>images/A3.JPG</imageLocation>
                 </option>
             </options>
         </node>
 
-        <node id="Q4">
+        <!-- Q3: (Branch A2) Difference between Obsidian and Pumice -->
+        <node id="Q3">
             <question>Is the specimen vesicular?</question>
             <options>
-                <option goto="R8">
-                    <text>Yes, vesicular</text>
-                    <description>Solid, generally light, vesicular, and vitreous texture</description>
+                <!-- If YES: Pumice -->
+                <option goto="R2">
+                    <text>Yes, it is vesicular</text>
+                    <description>Solid, usually light-colored, vesicular, and with vitreous texture – Pumice</description>
                     <imageLocation>images/Pedra-pomes A22.JPG</imageLocation>
                 </option>
+                <!-- If NO: Obsidian -->
                 <option goto="R1">
-                    <text>No, compact</text>
-                    <description>Generally dark, solid, with a glossy vitreous shine</description>
+                    <text>No, it is compact</text>
+                    <description>Usually dark-colored, solid, and with shiny vitreous luster – Obsidian</description>
                     <imageLocation>images/obsidiana.jpg</imageLocation>
                 </option>
             </options>
         </node>
 
-        <node id="Q5">
-            <question>Does the specimen have a clay smell when breathed upon?</question>
+        <!-- Q4: (Branch A3) Question about odor to identify Clay -->
+        <node id="Q4">
+            <question>Does the specimen emit a strong clay odor when blown on?</question>
             <options>
-                <option goto="R2">
-                    <text>Yes, clay smell</text>
-                    <description>Clay smell; various colors; soft and friable to the touch</description>
+                <!-- If YES: Clay -->
+                <option goto="R3">
+                    <text>Yes, it emits a strong clay odor</text>
+                    <description>When blown on, it emits a very strong clay odor; soft and friable specimen – Clay</description>
                     <imageLocation>images/argilaA31.JPG</imageLocation>
                 </option>
-                <option goto="Q8">
-                    <text>No</text>
-                    <description>.</description>
-                    <imageLocation>images/white_space.png</imageLocation>
+                <!-- If NO: goes to knife test -->
+                <option goto="Q5">
+                    <text>No, it does not emit a clay odor</text>
+                    <description>Specimen without characteristic clay odor</description>
+                    <imageLocation>images/basalto2.jpg</imageLocation>
                 </option>
             </options>
         </node>
 
-        <node id="Q8">
-            <question>Does the specimen react with HCl?</question>
+        <!-- Q5: (Branch A3, continuation) Scratched with knife to distinguish Limestone and Basalt -->
+        <node id="Q5">
+            <question>Does the specimen scratch with the knife?</question>
             <options>
-                <option goto="R3">
-                    <text>Yes, reacts</text>
-                    <description>Compact; scratched by a knife; strong effervescence with HCl; light or dark color</description>
+                <!-- If YES: Limestone -->
+                <option goto="R4">
+                    <text>Yes, it scratches easily</text>
+                    <description>Compact specimen, scratched by the knife, and with strong effervescence with HCl – Limestone</description>
                     <imageLocation>images/calcarioA32.JPG</imageLocation>
                 </option>
-                <option goto="R9">
-                    <text>No</text>
-                    <description>Compact; not scratched by a knife; no effervescence with HCl, dense, dark color, sometimes with olivine crystals</description>
+                <!-- If NO: Basalt -->
+                <option goto="R5">
+                    <text>No, it does not scratch</text>
+                    <description>Compact specimen, not scratched by the knife; no effervescence with HCl, dense, and dark-colored – Basalt</description>
                     <imageLocation>images/basalto.jpg</imageLocation>
                 </option>
             </options>
         </node>
 
-        <!-- Questions for "With visible minerals or fragments" -->
-        <node id="Q2">
-            <question>Can the grains of the specimen be distinguished by the naked eye?</question>
+        <!-- VIA WITH VISIBLE MINERALS (branch B) -->
+        <!-- Q7: Checks if the grains are individual or if there is a fragmentary composition -->
+        <node id="Q7">
+            <question>Can the grains of the specimen be distinguished with the naked eye?</question>
             <options>
-                <option goto="Q6">
-                    <text>Yes, the grains are distinguishable</text>
-                    <description>Grains distinguishable by the naked eye</description>
+                <!-- If YES: grains are individual -->
+                <option goto="Q8">
+                    <text>Yes, the grains are individual</text>
+                    <description>The grains can be observed separately</description>
                     <imageLocation>images/B2.JPG</imageLocation>
                 </option>
-                <option goto="Q7">
+                <!-- If NO: fragmentary composition -->
+                <option goto="Q9">
                     <text>No, it has a fragmentary composition</text>
-                    <description>Fragmentary composition</description>
+                    <description>Specimen with fragmentary composition</description>
                     <imageLocation>images/B3.JPG</imageLocation>
                 </option>
             </options>
         </node>
 
-        <node id="Q6">
+        <!-- Q8: (Branch B2) Checks for the presence or absence of foliation -->
+        <node id="Q8">
             <question>Does the specimen have foliation?</question>
             <options>
-                <option goto="R4">
-                    <text>No, without foliation</text>
-                    <description>Without foliation</description>
+                <!-- If NO (no foliation) -->
+                <option goto="Q10">
+                    <text>No, it does not have foliation</text>
+                    <description>Specimen without foliation</description>
                     <imageLocation>images/B4.JPG</imageLocation>
                 </option>
-                <option goto="R5">
-                    <text>Yes, with foliation</text>
-                    <description>Distinctly foliated</description>
+                <!-- If YES (with foliation) -->
+                <option goto="Q11">
+                    <text>Yes, it has foliation</text>
+                    <description>Distinctly foliated specimen</description>
                     <imageLocation>images/B5.JPG</imageLocation>
                 </option>
             </options>
         </node>
 
-        <node id="Q7">
-            <question>Are the fragments held together by cement?</question>
+        <!-- Q10: (Branch B4) Differentiates Marble and Granite by reaction with HCl -->
+        <node id="Q10">
+            <question>Does the specimen have strong effervescence with HCl?</question>
             <options>
+                <!-- If YES: Marble -->
                 <option goto="R6">
-                    <text>No, loose texture</text>
-                    <description>Loose texture, movable, fragments not held by cement</description>
-                    <imageLocation>images/AreiaB31.JPG</imageLocation>
+                    <text>Yes, it has strong effervescence</text>
+                    <description>Compact specimen, with a texture similar to sugar or fish scales – Marble</description>
+                    <imageLocation>images/marmore.JPG</imageLocation>
                 </option>
+                <!-- If NO: Granite -->
                 <option goto="R7">
-                    <text>Yes, compact texture</text>
-                    <description>Compact texture, fragments held together by cement</description>
+                    <text>No, it does not have effervescence</text>
+                    <description>Massive specimen, composed of grains of similar sizes – Granite</description>
+                    <imageLocation>images/Granito B42.JPG</imageLocation>
+                </option>
+            </options>
+        </node>
+
+        <!-- Q11: (Branch B5) Differentiates Schist and Gneiss by knife test -->
+        <node id="Q11">
+            <question>Does the specimen scratch with the knife?</question>
+            <options>
+                <!-- If YES: Schist -->
+                <option goto="R8">
+                    <text>Yes, it scratches easily</text>
+                    <description>Specimen that scratches with the knife, formed by very fine particles, with pronounced schistosity – Schist</description>
+                    <imageLocation>images/Xisto B51.JPG</imageLocation>
+                </option>
+                <!-- If NO: Gneiss -->
+                <option goto="R9">
+                    <text>No, it does not scratch easily</text>
+                    <description>Specimen with medium to coarse granular texture, with oriented grains – Gneiss</description>
+                    <imageLocation>images/Gnaisse B52.JPG</imageLocation>
+                </option>
+            </options>
+        </node>
+
+        <!-- Q9: (Branch B3) For specimens with fragmentary composition -->
+        <node id="Q9">
+            <question>Are the fragments of the specimen held together by cement?</question>
+            <options>
+                <!-- If YES: Conglomerate -->
+                <option goto="R10">
+                    <text>Yes, the fragments are held together by cement</text>
+                    <description>Compact specimen with fragments larger than 2 mm held together by cement – Conglomerate</description>
                     <imageLocation>images/conglomeradoB32.JPG</imageLocation>
+                </option>
+                <!-- If NO: Sand -->
+                <option goto="R11">
+                    <text>No, the fragments are not held together</text>
+                    <description>Specimen with loose texture, movable, with fragments smaller than 2 mm – Sand</description>
+                    <imageLocation>images/AreiaB31.JPG</imageLocation>
                 </option>
             </options>
         </node>
     </nodes>
 
     <results>
+        <!-- Results from branch A (Without visible minerals) -->
         <result id="R1">
             <ordem>Obsidian</ordem>
-            <description>Generally dark, solid, with a shiny vitreous finish.</description>
+            <description>Usually dark-colored, solid, with a shiny vitreous luster.</description>
             <imageLocation>images/obsidiana.jpg</imageLocation>
         </result>
         <result id="R2">
-            <ordem>Clay</ordem>
-            <description>Clay smell; soft to the touch; friable when rubbed.</description>
-            <imageLocation>images/argilaA31.JPG</imageLocation>
-        </result>
-        <result id="R3">
-            <ordem>Limestone</ordem>
-            <description>Compact; reacts strongly with HCl; light or dark color.</description>
-            <imageLocation>images/calcarioA32.JPG</imageLocation>
-        </result>
-        <result id="R4">
-            <ordem>Granite</ordem>
-            <description>Massive, composed of quartz and feldspar; grains of similar size.</description>
-            <imageLocation>images/Granito B42.JPG</imageLocation>
-        </result>
-        <result id="R5">
-            <ordem>Gneiss</ordem>
-            <description>Granular texture with mineral grains arranged in layers.</description>
-            <imageLocation>images/Gnaisse B52.JPG</imageLocation>
-        </result>
-        <result id="R6">
-            <ordem>Sand</ordem>
-            <description>Loose texture, movable, fragments smaller than 2 mm.</description>
-            <imageLocation>images/AreiaB31.JPG</imageLocation>
-        </result>
-        <result id="R7">
-            <ordem>Conglomerate</ordem>
-            <description>Compact texture, fragments larger than 2 mm, held together by cement.</description>
-            <imageLocation>images/conglomeradoB32.JPG</imageLocation>
-        </result>
-        <result id="R8">
             <ordem>Pumice</ordem>
-            <description>Solid, generally light, vesicular, and vitreous texture.</description>
+            <description>Solid, usually light-colored, vesicular, and with vitreous texture.</description>
             <imageLocation>images/Pedra-pomes A22.JPG</imageLocation>
         </result>
-        <result id="R9">
+        <result id="R3">
+            <ordem>Clay</ordem>
+            <description>When blown on, it emits a very strong clay odor; soft and friable specimen.</description>
+            <imageLocation>images/argilaA31.JPG</imageLocation>
+        </result>
+        <result id="R4">
+            <ordem>Limestone</ordem>
+            <description>Compact specimen, scratched by the knife, and with strong effervescence with HCl.</description>
+            <imageLocation>images/calcarioA32.JPG</imageLocation>
+        </result>
+        <result id="R5">
             <ordem>Basalt</ordem>
-            <description>Compact; not scratched by a knife; no effervescence with HCl, dense, dark color, sometimes with olivine crystals.</description>
-            <imageLocation>images/basalto.jpg</imageLocation>
+            <description>Compact specimen, not scratched by the knife, no effervescence with HCl, dense, and dark-colored.</description>
+            <imageLocation>images/basalto_afloramento.jpg</imageLocation>
+        </result>
+
+        <!-- Results from branch B (With visible minerals) -->
+        <result id="R6">
+            <ordem>Marble</ordem>
+            <description>Compact specimen, without foliation, with strong effervescence with HCl – texture similar to sugar or fish scales.</description>
+            <imageLocation>images/marmore.JPG</imageLocation>
+        </result>
+        <result id="R7">
+            <ordem>Granite</ordem>
+            <description>Massive specimen, without foliation, composed of grains of similar sizes, without effervescence with HCl.</description>
+            <imageLocation>images/Granito B42.JPG</imageLocation>
+        </result>
+        <result id="R8">
+            <ordem>Schist</ordem>
+            <description>Distinctly foliated specimen that scratches with the knife, formed by very fine particles, with pronounced schistosity.</description>
+            <imageLocation>images/Xisto B51.JPG</imageLocation>
+        </result>
+        <result id="R9">
+            <ordem>Gneiss</ordem>
+            <description>Distinctly foliated specimen that does not scratch with the knife, with medium to coarse granular texture, and oriented grains.</description>
+            <imageLocation>images/Gnaisse B52.JPG</imageLocation>
+        </result>
+        <result id="R10">
+            <ordem>Conglomerate</ordem>
+            <description>Specimen with fragmentary composition, with fragments larger than 2 mm held together by cement.</description>
+            <imageLocation>images/conglomeradoB32.JPG</imageLocation>
+        </result>
+        <result id="R11">
+            <ordem>Sand</ordem>
+            <description>Specimen with fragmentary composition, with loose, movable fragments smaller than 2 mm.</description>
+            <imageLocation>images/AreiaB31.JPG</imageLocation>
         </result>
     </results>
 </key>

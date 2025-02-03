@@ -1,183 +1,257 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key>
     <nodes>
-        <!-- Primeira Pergunta -->
+        <!-- Q1: Pergunta Inicial -->
         <node id="Q1">
             <question>O seu exemplar possui minerais ou fragmentos visíveis a olho nu?</question>
             <options>
-                <option goto="Q2">
+                <!-- Se SIM: via “Com minerais visíveis” -->
+                <option goto="Q7">
                     <text>Sim, possui minerais ou fragmentos visíveis</text>
-                    <description>Com minerais ou fragmentos visíveis a olho nu</description>
+                    <description>Exemplar com minerais ou fragmentos visíveis</description>
                     <imageLocation>images/B1.JPG</imageLocation>
                 </option>
-                <option goto="Q3">
+                <!-- Se NÃO: via “Sem minerais visíveis” -->
+                <option goto="Q2">
                     <text>Não, não possui minerais ou fragmentos visíveis</text>
-                    <description>Sem minerais ou fragmentos visíveis a olho nu</description>
+                    <description>Exemplar sem minerais ou fragmentos visíveis</description>
                     <imageLocation>images/a1.jpg</imageLocation>
                 </option>
             </options>
         </node>
 
-        <!-- Perguntas para "Sem minerais ou fragmentos visíveis" -->
-        <node id="Q3">
-            <question>O exemplar possui textura vítrea?</question>
+        <!-- VIA SEM MINERAIS VISÍVEIS (ramo A) -->
+        <!-- Q2: Determina se o exemplar é (total ou parcialmente) vítreo -->
+        <node id="Q2">
+            <question>O exemplar é total ou parcialmente vítreo?</question>
             <options>
-                <option goto="Q4">
-                    <text>Sim, vítreo</text>
-                    <description>Textura vítrea</description>
+                <!-- Se SIM: ramo A2 -->
+                <option goto="Q3">
+                    <text>Sim, é vítreo</text>
+                    <description>Exemplar com aparência vítrea</description>
                     <imageLocation>images/a2.JPG</imageLocation>
                 </option>
-                <option goto="Q5">
+                <!-- Se NÃO: ramo A3 -->
+                <option goto="Q4">
                     <text>Não, não é vítreo</text>
-                    <description>Não vítreo; opaco; homogêneo com grãos muito finos para distinguir</description>
+                    <description>Exemplar não-vitreo; opaco; de grão tão fino que não se distinguem</description>
                     <imageLocation>images/A3.JPG</imageLocation>
                 </option>
             </options>
         </node>
 
-        <node id="Q4">
+        <!-- Q3: (Ramo A2) Diferença entre Obsidiana e Pedra-Pomes -->
+        <node id="Q3">
             <question>O exemplar é vesicular?</question>
             <options>
-                <option goto="R8">
-                    <text>Sim, vesicular</text>
-                    <description>Sólido, geralmente claro, vesicular e textura vítrea</description>
+                <!-- Se SIM: Pedra-Pomes -->
+                <option goto="R2">
+                    <text>Sim, apresenta vesicularidade</text>
+                    <description>Sólido, geralmente de cor clara, vesicular e com textura vítrea – Pedra-Pomes</description>
                     <imageLocation>images/Pedra-pomes A22.JPG</imageLocation>
                 </option>
+                <!-- Se NÃO: Obsidiana -->
                 <option goto="R1">
-                    <text>Não, compacto</text>
-                    <description>Geralmente escura, sólida e com brilho vítreo brilhante</description>
+                    <text>Não, é compacto</text>
+                    <description>Geralmente de cor escura, sólido e com brilho vítreo brilhante – Obsidiana</description>
                     <imageLocation>images/obsidiana.jpg</imageLocation>
                 </option>
             </options>
         </node>
 
-        <node id="Q5">
-            <question>O exemplar tem cheiro de barro quando bafejado?</question>
+        <!-- Q4: (Ramo A3) Pergunta sobre cheiro para identificar Argila -->
+        <node id="Q4">
+            <question>Ao ser bafeado, o exemplar emite um cheiro forte de barro?</question>
             <options>
-                <option goto="R2">
-                    <text>Sim, cheiro de barro</text>
-                    <description>Cheiro de barro; várias cores; macio e friável ao toque</description>
+                <!-- Se SIM: Argila -->
+                <option goto="R3">
+                    <text>Sim, emite cheiro de barro</text>
+                    <description>Bafejado, emite cheiro muito forte de barro; exemplar macio e friável – Argila</description>
                     <imageLocation>images/argilaA31.JPG</imageLocation>
                 </option>
-                <option goto="Q8">
-                    <text>Não</text>
-                    <description>.</description>
-                    <imageLocation>images/white_space.png</imageLocation>
+                <!-- Se NÃO: passa para avaliação com o canivete -->
+                <option goto="Q5">
+                    <text>Não, não emite cheiro de barro</text>
+                    <description>Exemplar sem cheiro característico de barro</description>
+                    <imageLocation>images/basalto2.jpg</imageLocation>
                 </option>
             </options>
         </node>
 
-        <node id="Q8">
-            <question>O exemplar reage com HCl?</question>
+        <!-- Q5: (Ramo A3, continuação) Riscado com canivete para distinguir Calcário e Basalto -->
+        <node id="Q5">
+            <question>O exemplar risca-se com o canivete?</question>
             <options>
-                <option goto="R3">
-                    <text>Sim, Reage</text>
-                    <description>Compacto; riscado por canivete; forte efervescência com HCl; cor clara ou escura</description>
+                <!-- Se SIM: Calcário -->
+                <option goto="R4">
+                    <text>Sim, risca-se facilmente</text>
+                    <description>Exemplar compacto, riscado pelo canivete e com forte efervescência com HCl – Calcário</description>
                     <imageLocation>images/calcarioA32.JPG</imageLocation>
                 </option>
-                <option goto="R9">
-                    <text>Não</text>
-                    <description>Compacto; não riscado pelo canivete; sem efervescência com HCl, denso, cor escura, por vezes com cristais de olivina</description>
+                <!-- Se NÃO: Basalto -->
+                <option goto="R5">
+                    <text>Não, não risca-se</text>
+                    <description>Exemplar compacto, não riscado pelo canivete; sem efervescência com HCl, denso e de cor escura – Basalto</description>
                     <imageLocation>images/basalto.jpg</imageLocation>
                 </option>
             </options>
         </node>
 
-        <!-- Perguntas para "Com minerais ou fragmentos visíveis" -->
-        <node id="Q2">
+        <!-- VIA COM MINERAIS VISÍVEIS (ramo B) -->
+        <!-- Q7: Verifica se os grãos são individualizados ou se há composição fragmentária -->
+        <node id="Q7">
             <question>Os grãos do exemplar podem ser distinguidos a olho nu?</question>
             <options>
-                <option goto="Q6">
-                    <text>Sim, os grãos são distinguíveis</text>
-                    <description>Grãos distinguíveis a olho nu</description>
+                <!-- Se SIM: os grãos individualizam-se -->
+                <option goto="Q8">
+                    <text>Sim, os grãos são individualizados</text>
+                    <description>Os grãos podem ser observados separadamente</description>
                     <imageLocation>images/B2.JPG</imageLocation>
                 </option>
-                <option goto="Q7">
+                <!-- Se NÃO: composição fragmentária -->
+                <option goto="Q9">
                     <text>Não, possui composição fragmentária</text>
-                    <description>Composição fragmentária</description>
+                    <description>Exemplar com composição fragmentária</description>
                     <imageLocation>images/B3.JPG</imageLocation>
                 </option>
             </options>
         </node>
 
-        <node id="Q6">
+        <!-- Q8: (Ramo B2) Verifica a presença ou ausência de foliação -->
+        <node id="Q8">
             <question>O exemplar possui foliação?</question>
             <options>
-                <option goto="R4">
-                    <text>Não, sem foliação</text>
-                    <description>Sem foliação</description>
+                <!-- Se NÃO (sem foliação) -->
+                <option goto="Q10">
+                    <text>Não, não apresenta foliação</text>
+                    <description>Exemplar sem foliação</description>
                     <imageLocation>images/B4.JPG</imageLocation>
                 </option>
-                <option goto="R5">
-                    <text>Sim, com foliação</text>
-                    <description>Distintamente foliado</description>
+                <!-- Se SIM (com foliação) -->
+                <option goto="Q11">
+                    <text>Sim, apresenta foliação</text>
+                    <description>Exemplar distintamente foliado</description>
                     <imageLocation>images/B5.JPG</imageLocation>
                 </option>
             </options>
         </node>
 
-        <node id="Q7">
-            <question>Os fragmentos estão unidos por cimento?</question>
+        <!-- Q10: (Ramo B4) Diferencia Mármore e Granito pela reação com HCl -->
+        <node id="Q10">
+            <question>O exemplar apresenta forte efervescência com HCl?</question>
             <options>
+                <!-- Se SIM: Mármore -->
                 <option goto="R6">
-                    <text>Não, textura desagregada</text>
-                    <description>Textura desagregada, móvel, fragmentos não unidos por cimento</description>
-                    <imageLocation>images/AreiaB31.JPG</imageLocation>
+                    <text>Sim, apresenta forte efervescência</text>
+                    <description>Exemplar compacto, com textura semelhante a açúcar ou escamas de peixe – Mármore</description>
+                    <imageLocation>images/marmore.JPG</imageLocation>
                 </option>
+                <!-- Se NÃO: Granito -->
                 <option goto="R7">
-                    <text>Sim, textura compacta</text>
-                    <description>Textura compacta, fragmentos unidos por cimento</description>
+                    <text>Não, não apresenta efervescência</text>
+                    <description>Exemplar maciço, composto por grãos minerais de tamanhos semelhantes – Granito</description>
+                    <imageLocation>images/Granito B42.JPG</imageLocation>
+                </option>
+            </options>
+        </node>
+
+        <!-- Q11: (Ramo B5) Diferencia Xisto e Gnaisse pelo teste do canivete -->
+        <node id="Q11">
+            <question>O exemplar risca-se com o canivete?</question>
+            <options>
+                <!-- Se SIM: Xisto -->
+                <option goto="R8">
+                    <text>Sim, risca-se facilmente</text>
+                    <description>Exemplar que risca-se com o canivete, formado por partículas finíssimas e com xistosidade acentuada – Xisto</description>
+                    <imageLocation>images/Xisto B51.JPG</imageLocation>
+                </option>
+                <!-- Se NÃO: Gnaisse -->
+                <option goto="R9">
+                    <text>Não, não se risca facilmente</text>
+                    <description>Exemplar com textura granular média a grosseira, com grãos orientados – Gnaisse</description>
+                    <imageLocation>images/Gnaisse B52.JPG</imageLocation>
+                </option>
+            </options>
+        </node>
+
+        <!-- Q9: (Ramo B3) Para exemplares de composição fragmentária -->
+        <node id="Q9">
+            <question>Os fragmentos do exemplar estão unidos por cimento?</question>
+            <options>
+                <!-- Se SIM: Conglomerado -->
+                <option goto="R10">
+                    <text>Sim, os fragmentos estão unidos por cimento</text>
+                    <description>Exemplar de textura compacta, com fragmentos maiores que 2 mm unidos por cimento – Conglomerado</description>
                     <imageLocation>images/conglomeradoB32.JPG</imageLocation>
+                </option>
+                <!-- Se NÃO: Areia -->
+                <option goto="R11">
+                    <text>Não, os fragmentos não estão unidos</text>
+                    <description>Exemplar de textura desagregada, móvel, com fragmentos menores que 2 mm – Areia</description>
+                    <imageLocation>images/AreiaB31.JPG</imageLocation>
                 </option>
             </options>
         </node>
     </nodes>
 
     <results>
+        <!-- Resultados do ramo A (Sem minerais visíveis) -->
         <result id="R1">
             <ordem>Obsidiana</ordem>
-            <description>Geralmente escura, sólida e com brilho vítreo brilhante.</description>
+            <description>Geralmente de cor escura, sólido e com brilho vítreo brilhante.</description>
             <imageLocation>images/obsidiana.jpg</imageLocation>
         </result>
         <result id="R2">
-            <ordem>Argila</ordem>
-            <description>Cheiro de barro; macia ao toque; friável quando esfregada.</description>
-            <imageLocation>images/argilaA31.JPG</imageLocation>
-        </result>
-        <result id="R3">
-            <ordem>Calcário</ordem>
-            <description>Compacto; reage fortemente com HCl; cor clara ou escura.</description>
-            <imageLocation>images/calcarioA32.JPG</imageLocation>
-        </result>
-        <result id="R4">
-            <ordem>Granito</ordem>
-            <description>Maciço, composto por quartzo e feldspato; grãos de tamanho semelhante.</description>
-            <imageLocation>images/Granito B42.JPG</imageLocation>
-        </result>
-        <result id="R5">
-            <ordem>Gnaisse</ordem>
-            <description>Textura granular com grãos minerais orientados em camadas.</description>
-            <imageLocation>images/Gnaisse B52.JPG</imageLocation>
-        </result>
-        <result id="R6">
-            <ordem>Areia</ordem>
-            <description>Textura desagregada, móvel, fragmentos menores que 2 mm.</description>
-            <imageLocation>images/AreiaB31.JPG</imageLocation>
-        </result>
-        <result id="R7">
-            <ordem>Conglomerado</ordem>
-            <description>Textura compacta, fragmentos maiores que 2 mm, unidos por cimento.</description>
-            <imageLocation>images/conglomeradoB32.JPG</imageLocation>
-        </result>
-        <result id="R8">
             <ordem>Pedra-Pomes</ordem>
-            <description>Sólida, geralmente clara, vesicular e textura vítrea.</description>
+            <description>Sólido, geralmente de cor clara, vesicular e com textura vítrea.</description>
             <imageLocation>images/Pedra-pomes A22.JPG</imageLocation>
         </result>
-        <result id="R9">
+        <result id="R3">
+            <ordem>Argila</ordem>
+            <description>Ao ser bafeado, exala cheiro muito forte de barro; exemplar macio e friável.</description>
+            <imageLocation>images/argilaA31.JPG</imageLocation>
+        </result>
+        <result id="R4">
+            <ordem>Calcário</ordem>
+            <description>Exemplar compacto, que risca-se com o canivete e apresenta forte efervescência com HCl.</description>
+            <imageLocation>images/calcarioA32.JPG</imageLocation>
+        </result>
+        <result id="R5">
             <ordem>Basalto</ordem>
-            <description>Compacto; não riscado pelo canivete; sem efervescência com HCl, denso, cor escura, por vezes com cristais de olivina</description>
-            <imageLocation>images/basalto.jpg</imageLocation>
+            <description>Exemplar compacto, que não risca-se com o canivete, sem efervescência com HCl, denso e de cor escura.</description>
+            <imageLocation>images/basalto_afloramento.jpg</imageLocation>
+        </result>
+
+        <!-- Resultados do ramo B (Com minerais visíveis) -->
+        <result id="R6">
+            <ordem>Mármore</ordem>
+            <description>Exemplar compacto, sem foliação, que apresenta forte efervescência com HCl – textura semelhante a açúcar ou escamas de peixe.</description>
+            <imageLocation>images/marmore.JPG</imageLocation>
+        </result>
+        <result id="R7">
+            <ordem>Granito</ordem>
+            <description>Exemplar maciço, sem foliação, composto por grãos minerais de tamanhos semelhantes, sem efervescência com HCl.</description>
+            <imageLocation>images/Granito B42.JPG</imageLocation>
+        </result>
+        <result id="R8">
+            <ordem>Xisto</ordem>
+            <description>Exemplar distintamente foliado que risca-se com o canivete, formado por partículas finíssimas e com forte xistosidade.</description>
+            <imageLocation>images/Xisto B51.JPG</imageLocation>
+        </result>
+        <result id="R9">
+            <ordem>Gnaisse</ordem>
+            <description>Exemplar distintamente foliado que não risca com o canivete, apresentando textura granular média a grosseira, com grãos orientados.</description>
+            <imageLocation>images/Gnaisse B52.JPG</imageLocation>
+        </result>
+        <result id="R10">
+            <ordem>Conglomerado</ordem>
+            <description>Exemplar de composição fragmentária, com fragmentos maiores que 2 mm unidos por cimento.</description>
+            <imageLocation>images/conglomeradoB32.JPG</imageLocation>
+        </result>
+        <result id="R11">
+            <ordem>Areia</ordem>
+            <description>Exemplar de composição fragmentária, com fragmentos soltos, móveis e menores que 2 mm.</description>
+            <imageLocation>images/AreiaB31.JPG</imageLocation>
         </result>
     </results>
 </key>
